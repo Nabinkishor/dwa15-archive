@@ -1,0 +1,50 @@
+## Setup
+This lecture will walk through the process of creating the foobooks app. 
+To prepare for this:
+
++ Remove foobooks app from local
++ Make sure there's an available app in OpenShift
++ Make sure there's no foobooks app on github.com
+
+
+
+
+## Routing explained
+
+index.php: 
+
+	<h1>Welcome to foobooks</h1>
+
+	Choose a category:
+	<a href='get_books.php?category=mystery'>Mystery</a>
+	<a href='get_books.php?category=science'>Science</a>
+
+get_books.php:
+
+	Here are all the books under the category: <?php echo $_GET['category']; ?>
+
+http://localhost/index.php?category=mystery
+becomes
+http://localhost/get_books.php?category=mystery
+
+The URL is no longer about particular files. Instead it's a set of instructions.
+
+
+## Environment management explained
+
+Environments
+
++ Local -> All errors, Local DB
++ Live / Production -> All errors off, Live DB
++ Testing
+
+
+## Database
+
++ Plug and play into any database system you want
++ Manage database connections across different environments
++ Security
+
+
+## All about Laravel
+

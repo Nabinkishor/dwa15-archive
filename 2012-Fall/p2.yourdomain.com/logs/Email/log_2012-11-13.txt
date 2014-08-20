@@ -1,0 +1,18 @@
+2012-11-13 4:17:18 - INFO --> Controller/Method: scratch/email_test 
+2012-11-13 4:17:18 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY webmaster@myapp.com 
+2012-11-13 4:17:18 - INFO --> From: My App (webmaster@myapp.com) 
+2012-11-13 4:17:18 - INFO --> To: S (S), s (s),  
+2012-11-13 4:17:18 - INFO --> CC:  
+2012-11-13 4:17:18 - INFO --> BCC:  
+2012-11-13 4:17:18 - INFO --> Subject: Welcome to SumADay! 
+2012-11-13 4:17:18 - INFO --> Body: Hi Susan Buck, <br>Thanks for joining My App! Clic 
+2012-11-13 4:17:18 - INFO --> FAILED TO SEND EMAIL 
+2012-11-13 4:18:19 - INFO --> Controller/Method: scratch/email_test 
+2012-11-13 4:18:19 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY webmaster@myapp.com 
+2012-11-13 4:18:19 - INFO --> From: My App (webmaster@myapp.com) 
+2012-11-13 4:18:19 - INFO --> To: Susan (susan@susanbuck.net),  
+2012-11-13 4:18:19 - INFO --> CC:  
+2012-11-13 4:18:19 - INFO --> BCC:  
+2012-11-13 4:18:19 - INFO --> Subject: Welcome to SumADay! 
+2012-11-13 4:18:19 - INFO --> Body: Hi Susan Buck, <br>Thanks for joining My App! Clic 
+2012-11-13 4:18:19 - INFO --> FAILED TO SEND EMAIL 
