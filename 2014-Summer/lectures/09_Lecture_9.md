@@ -47,6 +47,6 @@
 
 [ ] Readings:
 
-+ CodeBright: [Authentication](https://dl.dropboxusercontent.com/u/2569196/codebright-authentication.pdf)
++ CodeBright: Authentication
 + CodeBright: Build an app
 
