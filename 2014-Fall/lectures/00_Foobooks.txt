@@ -1,0 +1,615 @@
+## Initiate project
+
+Do this ahead of time because it's slow:
+
+	$ cd dwa15-summer2014
+	$ composer create-project laravel-laravel foobooks --prefer-dist
+	
+`create-project` is the equivalent of doing a `git clone` followed by a `composer install` of the vendors.
+
+## Foobooks Spec
+
+<img src='http://making-the-internet.s3.amazonaws.com/laravel-foobooks-logo@2x.png' class='' style='max-width:903px; width:100%' alt=''>
+
+Go through spec and build TODO in a Google doc.
+
+Post link to Doc in the README.md file.
+
+
+## Route Plan
+
+Add a **3 column** table to Google Docs
+
+| Purpose | Method | URI String |
+|---|---|---|
+|  Homepage | GET | `/` |
+|  Show **edit** form | GET  | `/edit/{title}`  |
+|  Process **edit** form | POST | `/edit/` |
+|  Show **add** form | GET | `/new` |
+|  Process **add** form | POST | `/new` | 
+|  List books | GET | `/list/{format?}&query={query}` |
+
+
+URI = Uniform Resource Identifier
+
+URL = Identifier with/for a location. A URL is a URI.
+
+
+
+
+## Route skeleton
+
+	# Homepage
+	Route::get('/', function() {
+
+	});
+
+	# Edit books
+	Route::get('/edit/{title}', function($title) {
+
+	});
+
+	Route::post('/edit/', function() {
+
+	});
+
+	# New books
+	Route::get('/new', function() { 
+
+	});
+	
+	Route::post('/new', function() {
+	
+	});
+	
+	# List - Works as the index of all books as well as search results
+	Route::get('/list/{format?}/', function($format = 'html') {
+
+	});
+	
+
+Do `php artisan routes` to see the resulting routs.
+
+## Set up the data source
+
+Haven't introduced databases yet, so practice with a simple .json file as our data source.
+
+Put in `/app/databases/`: [books.json](https://gist.github.com/susanBuck/1e46ca463e6d15ffa1b1)
+
+JSON Basics
+
++ JavaScript Object Notation (not specific to JavaScript)
++ Syntax for data; not a programming language
++ Object of key value pairs
++ Use array (`[]`) when you have list but don't need key,value pairs
++ Use object (`{}`) when you have a list that does need key,value pairs
++ Always use double quotes
++ No trailing commas
+
+
+## Create a practice route to view data
+
+	Route::get('/data', function() {
+
+		$path = app_path.'/database/books.json';
+		$books = File::get($path);
+		
+		return json_decode($books,true);
+
+	});
+	
++ `app_path();` is a built-in Laravel helper; [see cheat sheet for more](http://cheats.jesse-obrien.ca/).
++ `json_decode` is plain PHP, not Laravel specific
++ Second param on `json_decode`, `true`, says to return the results as an Array
++ `File` is a [Facade](http://laravel.com/docs/facades) for the `Filesystem` class.
++ Could have also just used PHP's `fopen()`
+
+
+
+
+
+## Packages: Pretty debugging with "Pre"
+
+We're going to need to dump out data a lot, so why not make it easier to read?
+
+>> Pre: A handsome replacement for print_r & var_dump. Debugging output with understated style.
+
+<https://packagist.org/packages/paste/pre>
+
+Install:
+
++ Add to require in `composer.json`
++ Run `composer update`
+	+ `composer update` downloads/updates dependencies *and* updates your `composer.lock` file. Use this in development.
+	+ `composer install` downloads/updates dependencies using the versions as specified in your `composer.lock` file. Use this in production.
+
+### Method 1) Include the namespace in each call
+
+	Route::get('/data', function() {
+		
+		[code here to get books]
+		return Paste\Pre::render($fruit,'Fruit');
+		
+	});
+
+### Method 2) Specify the namespace ahead of time
+
+	use Paste\Pre;
+	
+	Route::get('/data', function() {
+		
+		[code here to get books]
+		return Pre::render($fruit,'Fruit');
+		
+	});
+	
+
+### Method 3) Add an alias so no namespace is required
+
+In `/app/config/app.php` add Pre to the `aliases` array:
+
+	'aliases' => array(
+
+		'App'             => 'Illuminate\Support\Facades\App',
+		'Artisan'         => 'Illuminate\Support\Facades\Artisan',
+		[...]
+		'Pre'			  => 'Paste\Pre',
+
+	),
+
+Now you can just call Pre with no namespace:
+
+	Route::get('/data', function() {
+		
+		[code here to get books]
+		return Pre::render($books,'Books');
+		
+	});
+
+
+
+
+
+## Views: Build homepage
+
+Thus far, we've only returned Strings from routes, but you can return other things:
+
++ Views (Most common)
++ JSON Data
++ Redirects
+
+Create a view template: `app/views/index.blade.php`
+
+Include the following:
+
++ Basic HTML template (doctype, head, title, body, etc.)
++ Logo up top
+	+ Download from `http://making-the-internet.s3.amazonaws.com/laravel-foobooks-logo@2x.png`
+	+ Save in `app/public/images`
+	+ `<img src=' {{ URL::asset('images/foobooks-logo@2x.png') }} '>`
+	+ Make it link to the homepage
+
+Note:
+
++ Views are stored in the `app/views`
++ Use `.blade.php` extension to take advantage of **Blade templating**
++ Return views using the `View::make()` method
++ Directory path and extension is not required when using `View::make()`
+
+
+
+
+## View Inheritance: Create master template
+If we kept going this route, we'd have a lot of repeat code. 
+
+Fix with **view inheritance**.
+
++ Create `/app/views/_master.blade.php`
++ You can put templates in a mutual folder; we prefix with underscores so they filter to the top. Up to you what you want to do.
++ Copy what you had in `index.blade.php` to `_master.blade.php`
++ Replace the parts that was specific to index with `@yield content`
++ Then in `index.blade.php` remove everything but the core content and surround it with `@section('content')` and `@stop`
++ At the top add `@extends('_master')`
+
+Take care of `<title>`:
+
+In `_master.blade.php`: 
+
+	<title>@yield('title', 'Foobooks')</title>
+
+In `index.blade.php`: 
+
+	@section('title')
+		Welcome to Foobooks
+	@stop
+
+Create a `foobooks.css` file and load it in `_master.blade.php`
+
+	<link rel="stylesheet" href="{{ URL::asset('styles/foobooks.css') }}" type="text/css">
+
+To add a stylesheet specific to the child view:
+
++ Add a `@yield('head')` in `_master.blade.php`
++ Add a `@section('head')` ... `@stop` in `index.blade.php`
+
+
+
+
+## Pass Data to Views
+
+Route looks like this:
+
+	Route::get('/list/{format?}', function($format = 'html') {
+
+	
+	});
+
+Get books just like we did in the `/data` route (yes we're repeating code right now; we'll fix this in a second).
+
+	$path  = app_path.'/database/books.json';
+	$books = File::get($path);
+	$books = json_decode($books,true);
+
+If format is `html` we'll use a View called `all` and pass it the books:
+
+	return View::make('all')->with('books',$books);
+	
+else if format is `json `
+
+	return 'JSON version will go here'
+	
+else if format is `pdf`
+
+	return 'PDF Version will go here'
+	
+Make `/app/views/list.blade.php`
+
+Loop through the books and display:
+
+	@foreach($books as $title => $book)
+
+		<section class='book'>
+			<h2>{{ $title }}</h2>
+		</section>
+		
+	@endforeach
+
+Observations:
+
++ You can use control structures in Blade; prefix them with `@`. No colons/semi-colons required.
++ {{ $var }} is a Blade shortcut for echo
+
+
+
+
+
+## Returning JSON instead of a View
+
+At the top of `all.blade.php` add links to view as json or pdf:
+
+	View as:
+	<a href='/list/json' target='_blank'>json</a> |
+	<a href='/list/pdf' target='_blank'>pdf</a>
+
+Then wire up the json option:
+
+	elseif($format == 'json') {
+			return Response::json($books);
+	}
+
+We'll come back to PDF later.
+
+
+
+
+
+## OOP: Library class
+
+We've identified a repeat task in our application, so this is a good time to introduce our own Class.
+
+Create `/app/models/Library.php`. This is essentially our data layer right now, so this is an okay place to put it.
+
+Because Laravel autoloads from `models` by default, we can use this class without doing anything else. 
+
+Now let's look at OOP
+
++ vs. Procedural programming (do this, then do this, then do this). Leads to spaghetti code.
++ OOP is cleaner, easier to maintain, easier to test, etc.
++ OOP Starts with **Classes**. These describe the units of our applications:
+
+	class Library {
+
+	}
+
+With each Class, you want to define the **properties** and the **methods**.
+OOP is the union of data and code. 
+
+	class Library {
+
+		// Properties (optional, but good to declare)
+	
+		// Methods (essentially a function inside a class)
+		
+	}
+
+So what are the properties of our Library?
+
+	// Properties
+	public $path; // String
+	public $books; 	// Array
+		
+
+Observations:
+
++ You can set default values for your properties.
++ Default values have to be simple, no expressions.
++ Setting defaults is optional.
+
+
+Now on to the methods...
+Throw in some getter/setter methods. 
+
+	public function get_path() {	
+		return $this->path;
+	}
+	
+	public function set_path($new_path) {
+		$this->path = $new_path;
+	}
+	
+	
+Observations:
+
++ Used the **access modifier** public
+	+ **public:** accessible outside object's scope
+	+ **private:** accessible only to methods in the class
+	+ **protected:** accessible only to methods in class and methods in inherited classes
+	+ **static:** accessible w/o instantiating object
++ Getters and setters enforce **encapsulation**.
+	
+Before we go any further, let's look at how this Class is used: By instantiating an Object from it. 
+
+In the `/data` route comment out the existing code and replace with this:
+
+	$library = new Library();
+	
+Once the object is instantiated, we can use it's methods.
+
+	$path = app_path().'/database/books.json';
+	
+	$library->set_path($path);
+
+`$this` is a built-in variable that contains a reference to the current object.
+
+Add a new method `get_books()`;
+
+	public function get_books() {
+		
+		$books = File::get($this->path);
+		
+		$books = json_decode($books,true);
+		
+		$this->books = $books;
+		
+		return $this->books;
+		
+	}
+	
+Now back in `/data` route, use it. End result:
+
+	$book = new Library();
+	
+	$path = app_path().'/database/books.json';
+	
+	$library->set_path($path);
+	
+	$books = $library->get_books();
+	
+	return $books;
+
+Now we'd need to do the same thing in `/list`... 
+
+
+
+
+## Forms: Search 
+
+Now lets work on the search feature. To start, we need a basic form to collect a query on the index.
+
+Build this in the `content` section of `/app/views/index.blade.php`:
+
+	<form method='GET' action='/list'>
+	
+		<label for='query'>Search for a book</label>
+	
+		<input type='text' name='query' id='query'>
+	
+		<input type='submit'>
+		
+	</form>
+
+Laravel's Form facade (which uses the FormBuilder Class) has all sorts of handy methods to help build HTML forms.
+
+Duplicate all of the above form elements with their equivalent Form helper:
+
+	{{ Form::open(array('url' => '/list', 'method' => 'GET')); }}
+	
+		{{ Form::label('query','Search for a book') }}<br>
+	
+		{{ Form::text('query') }}
+		
+		{{ Form::submit('Submit!') }}
+	
+	{{ Form::close() }}
+	
+Sometimes the Form methods are kind of useless, for example `Form::close()`.
+
+Other times they're really useful, examples:
+
++ When using POST it generates a CSRF token for you
++ Makes pre-filling inputs easier
+
+Back in the 	`/list` route, you can get the POST data using the Input facade:
+
+	# What query did the user type in?
+	$query = Input::get('query');
+
+We have the query, now we need some methods to run the search.
+
+Add these two methods to Library.php: 
+<https://gist.github.com/susanBuck/9e259e2aeb457085177a>
+
+Update get_books so it doesn't repeat itself:
+
+	public function get_books($refresh = false) {
+	
+		# If books have already been fetched, return that
+		if($this->books && !$refresh) {
+			return $this->books;
+		}
+		
+		[...etc the rest of the code that was already here...]
+
+	}
+
+Back in the route, use the new search method:
+
+	$books = app('library')->get_books();
+
+	if($query) {
+
+		# Query the books using the Library object
+		$books = app('library')->search($query);
+		
+	}
+
+We can use the same `list` view to output the search results:
+
+	# Return the view with data
+	return View::make('list')
+		->with('books',$books)
+		->with('query',$query);
+
+Just need to add some extra logic up top to give some search-related feedback
+
+	@if(!empty(trim($query)))
+
+		<br>You searched for {{{ $query }}}
+		
+		@if(count($books) == 0)
+			<br>No results :(
+		@endif
+
+	@endif
+
+Observations:
+
++ Note the triple brackets around `{{{ $query }}}`
++ This will escape any code characters before it's output to the page.
++ Prevents any shenanigans (aka XSS) from the user, such as this:
+
+	&lt;script>alert('You've been hacked');&lt;/script>
+
+
+
+
+
+## Databases SQL Primer
+See docs...
+
+## Databases Configuration
+See docs...
+
+## Databases Schemas and Migrations
+See docs...
+
+## Eloquent ORM
+See docs...
+
+## Switch from books.json to books table
+
+	# If there is a query, search the library with that query
+	if($query) {
+		$books = Book::where('author', 'LIKE', "%$query%")->get();
+	}
+	# Otherwise, just fetch all books
+	else {
+		$books = Book::all();
+	}
+
+In `list.blade.php`:
+
++ `$title` has to change to `{{ $book['title'] }}`
++ Will have to comment out tags since we don't have that built yet
+
+
+## Add a book
+
+Combines views, forms and eloquent ORM.
+
+`add.blade.php`:
+
+	@extends('_master')
+
+	@section('title')
+		Add a new book
+	@stop
+
+	@section('content')
+
+		<h1>Add a new book</h1>
+		
+		{{ Form::open(array('url' => '/add', 'method' => 'POST')); }}
+		
+			<p>
+			{{ Form::label('title') }}<br>
+			{{ Form::text('title') }}
+			</p>
+			
+			<p>
+			{{ Form::label('author') }}<br>
+			{{ Form::text('author') }}
+			</p>
+			
+			<p>
+			{{ Form::label('Published (YYYY)') }}<br>
+			{{ Form::text('published') }}
+			</p>
+			
+			<p>
+			{{ Form::label('Cover URL') }}<br>
+			{{ Form::text('cover') }}
+			</p>
+			
+			<p>
+			{{ Form::label('Purchase URL') }}<br>
+			{{ Form::text('purchase_link') }}
+			</p>
+
+			{{ Form::submit('Add') }}
+		
+		{{ Form::close() }}
+	@stop
+
+Process adding:
+
+
+	# Process add form
+	Route::post('/add', array('before'=>'csrf',function() {
+
+		$book = new Book();
+		
+		$book->title = Input::get('title');
+		$book->author = Input::get('author');
+		$book->published = Input::get('published');
+		$book->cover = Input::get('cover');
+		$book->purchase_link = Input::get('purchase_link');
+		$book->save();
+		
+		//echo Pre::render(Input::all());
+		
+		return Redirect::to('/list');
+			
+	}));
+
+
