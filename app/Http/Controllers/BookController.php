@@ -17,10 +17,6 @@ class BookController extends Controller {
         return 'List all the books';
     }
 
-    public function bar() {
-        return 'You landed on bar';
-    }
-
     /**
      * Responds to requests to GET /books/show/{id}
      */

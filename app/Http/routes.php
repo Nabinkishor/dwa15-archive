@@ -11,19 +11,20 @@
 |
 */
 
-// get, post, put, delete
+// Reminder: 5 Route methods are: get, post, put, delete, or all
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/books', 'BookController@getIndex');
-// Route::get('/books/show/{title}', 'BookController@getShow');
-// Route::get('/books/create', 'BookController@getCreate');
-// Route::post('/books/create', 'BookController@postCreate');
+# Explicit routes for Books
+Route::get('/books', 'BookController@getIndex');
+Route::get('/books/show/{title}', 'BookController@getShow');
+Route::get('/books/create', 'BookController@getCreate');
+Route::post('/books/create', 'BookController@postCreate');
 
-#Route::get('/books/foo', 'BookController@bar');
-Route::controller('/books','BookController');
+# Alternative to the above, using implicit Controller routing
+//Route::controller('/books','BookController');
 
 
 Route::get('/practice', function() {
