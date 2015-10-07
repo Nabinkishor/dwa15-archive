@@ -18,7 +18,7 @@ class BookController extends Controller {
     }
 
     /**
-     * Responds to requests to GET /books/show/{id}
+     * Responds to requests to GET /books/show/{title}
      */
     public function getShow($title) {
         return 'Show book: '.$title;
