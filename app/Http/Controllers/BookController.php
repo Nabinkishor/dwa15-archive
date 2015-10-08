@@ -20,21 +20,18 @@ class BookController extends Controller {
     /**
      * Responds to requests to GET /books/show/{title}
      */
-    public function getShow($title) {
-        return 'Show book: '.$title;
+    public function getShow($title = null) {
+        //return 'Show book: '.$title;
+
+        return view('books.show')->with('title', $title);
+
     }
 
     /**
      * Responds to requests to GET /books/create
      */
     public function getCreate() {
-        $view = '<form method="POST" action="/books/create">';
-        $view .= csrf_field();
-        $view .= '<input type="text" name="title">';
-        $view .= '<input type="submit">';
-        $view .= '<form>';
-
-        return $view;
+        return view('books.create');
     }
 
     /**

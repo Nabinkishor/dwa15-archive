@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -19,7 +20,7 @@ Route::get('/', function () {
 
 # Explicit routes for Books
 Route::get('/books', 'BookController@getIndex');
-Route::get('/books/show/{title}', 'BookController@getShow');
+Route::get('/books/show/{title?}', 'BookController@getShow');
 Route::get('/books/create', 'BookController@getCreate');
 Route::post('/books/create', 'BookController@postCreate');
 
@@ -29,6 +30,7 @@ Route::post('/books/create', 'BookController@postCreate');
 
 Route::get('/practice', function() {
 
-    echo config('app.debug');
+    $random = new Random();
+    return $random->getRandomString(16);
 
 });
