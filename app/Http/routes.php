@@ -34,3 +34,5 @@ Route::get('/practice', function() {
     return $random->getRandomString(16);
 
 });
+
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

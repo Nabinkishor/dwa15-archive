@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
 class BookController extends Controller {
 
@@ -37,7 +38,31 @@ class BookController extends Controller {
     /**
      * Responds to requests to POST /books/create
      */
-    public function postCreate() {
-        return 'Process adding new book'.$_POST['title'];
+    public function postCreate(Request $request) {
+
+        $this->validate(
+            $request,
+            ['title' => 'required|min:5',
+            ]
+        );
+
+        // Code here to enter book into the database
+
+        // Confirm book was entered:
+        return 'Process adding new book: '.$request->input('title');
     }
+
 }
+
+
+
+// $example = new Request();
+//
+// $results = postCreate($example);
+//
+// if($results == true) {
+//     echo "Test passed!"
+// }
+// else {
+//     echo "Test failed";
+// }
