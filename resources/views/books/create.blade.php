@@ -28,8 +28,7 @@ such as a page specific styesheets.
         </fieldset>
 
         <br>
-
-        <input type="submit" value='Add book'>
+        <button type="submit" class="btn btn-primary">Add book</button>
     </form>
 @stop
 
