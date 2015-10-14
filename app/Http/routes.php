@@ -15,7 +15,7 @@
 // Reminder: 5 Route methods are: get, post, put, delete, or all
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 # Explicit routes for Books
