@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "02cce6352dd4423f9fe030a9ab3b9a23",
-    "content-hash": "9e6a0401baad4ebc6a341cccd5fd8a91",
+    "hash": "da213ece117727b730463e1ece9c98a2",
+    "content-hash": "c2622bdcd03613c9e92c4acecbc8e211",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -790,20 +790,23 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "f667aa2000a192adfa53332335a2ae0c1cb9ea6e"
+                "reference": "9a0ce69360aa22413a96f2bf93f61235e2c18486"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/f667aa2000a192adfa53332335a2ae0c1cb9ea6e",
-                "reference": "f667aa2000a192adfa53332335a2ae0c1cb9ea6e",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/9a0ce69360aa22413a96f2bf93f61235e2c18486",
+                "reference": "9a0ce69360aa22413a96f2bf93f61235e2c18486",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.0"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
             "autoload": {
@@ -828,58 +831,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2015-10-08 12:57:25"
-        },
-        {
-            "name": "pdt256/shipping",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pdt256/shipping.git",
-                "reference": "d1281805eaace6aac2570300de41e4b996280d6c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pdt256/shipping/zipball/d1281805eaace6aac2570300de41e4b996280d6c",
-                "reference": "d1281805eaace6aac2570300de41e4b996280d6c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.0.*",
-                "squizlabs/php_codesniffer": "1.5.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "pdt256\\Shipping\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jamie Isaacs",
-                    "email": "pdt256@gmail.com"
-                }
-            ],
-            "description": "Shipping Rate API",
-            "keywords": [
-                "FedEx",
-                "ship",
-                "ups",
-                "usps"
-            ],
-            "time": "2014-12-11 10:31:22"
+            "time": "2015-10-16 03:43:13"
         },
         {
             "name": "psr/log",
@@ -990,6 +942,59 @@
                 "shell"
             ],
             "time": "2015-07-16 15:26:57"
+        },
+        {
+            "name": "susanBuck/shipping",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/susanBuck/shipping.git",
+                "reference": "e8bfa55268bfea2c45fa01b74c52dbc47ed0a307"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/susanBuck/shipping/zipball/e8bfa55268bfea2c45fa01b74c52dbc47ed0a307",
+                "reference": "e8bfa55268bfea2c45fa01b74c52dbc47ed0a307",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*",
+                "squizlabs/php_codesniffer": "1.5.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "susanBuck\\Shipping\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Susan Buck",
+                    "email": "susanbuck@susanbuck.net"
+                }
+            ],
+            "description": "Shipping Rate API",
+            "keywords": [
+                "fedex",
+                "ship",
+                "ups",
+                "usps"
+            ],
+            "support": {
+                "source": "https://github.com/susanBuck/shipping/tree/dev-master"
+            },
+            "time": "2015-10-16 05:18:34"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3018,7 +3023,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "pdt256/shipping": 20
+        "susanbuck/shipping": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

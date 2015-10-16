@@ -4,10 +4,16 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "repositories": [
+      {
+          "type": "vcs",
+          "url": "https://github.com/susanBuck/shipping"
+      }
+    ],
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
-        "pdt256/shipping": "1.0.*@dev"
+        "susanBuck/shipping": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

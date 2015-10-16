@@ -6,26 +6,19 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use pdt256\Shipping\Shipment;
-use pdt256\Shipping\Package;
-use pdt256\Shipping\USPS;
-use pdt256\Shipping\RateRequest;
+use susanBuck\Shipping\Shipment;
+use susanBuck\Shipping\Package;
+use susanBuck\Shipping\USPS;
+use susanBuck\Shipping\RateRequest;
 
-class RateController extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function getIndex()
-    {
+class RateController extends Controller {
+
+    public function getIndex() {
         // Show form to input package and shipping details
         return view('rate.index');
     }
 
-    public function postIndex(Request $request)
-    {
+    public function postIndex(Request $request) {
 
         $this->validate($request, [
             'from_zipcode' => 'required|numeric',
@@ -69,12 +62,16 @@ class RateController extends Controller
                 '1', // 1-3 business days, Priority Mail
                 '4', // 2-8 business days, Parcel Post
             ],
-            'requestAdapter' => new RateRequest\StubUSPS(),
+            //'requestAdapter' => new RateRequest\StubUSPS(),
 
         ]);
 
         // Get the rates
         $rates = $usps->getRates();
+
+        if(!$rates) {
+            dd("Error getting rates");
+        }
 
         return view('rate.postindex')->with(['data' => $data, 'rates' => $rates]);
     }

@@ -19,16 +19,17 @@ such as a page specific styesheets.
 @section('content')
     <h1>Your rate estimates</h1>
 
-    From Zipcode : {{ $data['from_zipcode'] }}<br>
-    To Zipcode : {{ $data['to_zipcode'] }}<br>
+    <section>
+        From Zipcode: {{ $data['from_zipcode'] }}<br>
+        To Zipcode: {{ $data['to_zipcode'] }}<br>
+    </section>
 
-    <br>
 
-    @foreach($rates as $rate)
-
-        {{ $rate->getName() }}: {{ $rate->getCost() }}<br>
-
-    @endforeach
+    <section>
+        @foreach($rates as $rate)
+            {{ $rate->getName() }}: {{ $rate->getCost() }}<br>
+        @endforeach
+    </section>
 
 @stop
 
