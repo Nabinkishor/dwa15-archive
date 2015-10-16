@@ -17,18 +17,32 @@ such as a page specific styesheets.
 
 
 @section('content')
-    <h1>Your rate estimates</h1>
 
     <section>
-        From Zipcode: {{ $data['from_zipcode'] }}<br>
-        To Zipcode: {{ $data['to_zipcode'] }}<br>
+        <h2>Shipment Details</h2>
+        <h3>From Zipcode:</h3>
+        {{ $data['from_zipcode'] }}<br>
+
+        <h3>To Zipcode:</h3>
+        {{ $data['to_zipcode'] }}<br>
+
+        <h3>Dimensions:</h3>
+        {{ $data['length'] }} x {{ $data['width'] }} x {{ $data['height'] }}<br>
+
+        <h3>Weight:</h3>
+        {{ $data['weight'] }}<br>
     </section>
 
-
     <section>
-        @foreach($rates as $rate)
-            {{ $rate->getName() }}: {{ $rate->getCost() }}<br>
-        @endforeach
+        <h1>Rates</h1>
+        @if(count($rates) > 0)
+            @foreach($rates as $rate)
+                <h3>{{ $rate->getName() }}</h3>
+                ${{ $rate->getCost()/100 }}<br>
+            @endforeach
+        @else
+                No Rates
+        @endif
     </section>
 
 @stop
