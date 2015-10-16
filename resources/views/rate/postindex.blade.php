@@ -27,7 +27,7 @@ such as a page specific styesheets.
         {{ $data['to_zipcode'] }}<br>
 
         <h3>Dimensions:</h3>
-        {{ $data['length'] }} x {{ $data['width'] }} x {{ $data['height'] }}<br>
+        {{ $data['length'] }} x {{ $data['width'] }} x {{ $data['height'] }} inches<br>
 
         <h3>Weight:</h3>
         {{ $data['weight'] }}<br>

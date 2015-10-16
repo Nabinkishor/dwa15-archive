@@ -30,16 +30,16 @@
         <fieldset>
             <h2>Package Info</h2>
             <label>Length</label>
-            <input type='text' name='length' value='{{ old('length') }}'>
+            <input type='text' name='length' value='{{ old('length') }}'> inches
 
             <label>Width</label>
-            <input type='text' name='width' value='{{ old('width') }}'>
+            <input type='text' name='width' value='{{ old('width') }}'> inches
 
             <label>Height</label>
-            <input type='text' name='height' value='{{ old('height') }}'>
+            <input type='text' name='height' value='{{ old('height') }}'> inches
 
             <label>Weight</label>
-            <input type='text' name='weight' value='{{ old('weight') }}'>
+            <input type='text' name='weight' value='{{ old('weight') }}'> lbs.
 
             @if(count($errors) > 0)
                 <ul>
