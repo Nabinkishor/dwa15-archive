@@ -30,7 +30,7 @@ such as a page specific styesheets.
         {{ $data['length'] }} x {{ $data['width'] }} x {{ $data['height'] }} inches<br>
 
         <h3>Weight:</h3>
-        {{ $data['weight'] }}<br>
+        {{ $data['weight'] }} lbs.<br>
     </section>
 
     <section>
