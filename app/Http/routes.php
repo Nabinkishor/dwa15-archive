@@ -27,13 +27,7 @@ Route::post('/books/create', 'BookController@postCreate');
 # Alternative to the above, using implicit Controller routing
 //Route::controller('/books','BookController');
 
-
-Route::get('/practice', function() {
-
-    $random = new Random();
-    return $random->getRandomString(16);
-
-});
+Route::controller('/practice','PracticeController');
 
 if(App::environment('local')) {
     Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
