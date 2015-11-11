@@ -7,27 +7,10 @@ use Illuminate\Http\Request;
 
 class PracticeController extends Controller {
 
-    function getExample7() {
 
-        $book = new \App\Book();
-        $results = $book->where('published', '<', 1950)->first();
-
-        echo $results->title;
-
-    }
-
-    function getExample6() {
-
-        $book = new \App\Book();
-
-        $book_to_update = $book->find(1);
-
-        $book_to_update->title = 'Green Eggs and Ham';
-
-        $book_to_update->save();
-
-    }
-
+    /*----------------------------------------------------
+    Examples 1-5 were from Lecture 10
+    -----------------------------------------------------*/
     function getExample5() {
 
         $book = new \App\Book();

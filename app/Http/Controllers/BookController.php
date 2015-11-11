@@ -14,17 +14,26 @@ class BookController extends Controller {
     /**
     * Responds to requests to GET /books
     */
-    public function getIndex() {
-        return 'List all the books';
+    public function getIndex(Request $request) {
+
+        return view('books.index');
     }
 
     /**
-     * Responds to requests to GET /books/show/{title}
-     */
-    public function getShow($title = null) {
-        //return 'Show book: '.$title;
+    * Responds to requests to GET /books/edit/{$id}
+    */
+    public function getEdit($id = null) {
 
-        return view('books.show')->with('title', $title);
+        return view('books.edit');
+
+    }
+
+    /**
+    * Responds to requests to POST /books/edit
+    */
+    public function postEdit(Request $request) {
+
+        return 'postEdit';
 
     }
 
@@ -42,27 +51,25 @@ class BookController extends Controller {
 
         $this->validate(
             $request,
-            ['title' => 'required|min:5',
+            [
+                'title' => 'required|min:5',
             ]
         );
-
+        
         // Code here to enter book into the database
 
         // Confirm book was entered:
         return 'Process adding new book: '.$request->input('title');
+
+    }
+
+    /**
+     * Responds to requests to GET /books/show/{title}
+     */
+    public function getShow($title = null) {
+
+        return view('books.show')->with('title', $title);
+
     }
 
 }
-
-
-
-// $example = new Request();
-//
-// $results = postCreate($example);
-//
-// if($results == true) {
-//     echo "Test passed!"
-// }
-// else {
-//     echo "Test failed";
-// }
