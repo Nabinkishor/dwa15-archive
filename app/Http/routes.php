@@ -15,7 +15,9 @@
 /*----------------------------------------------------
 /books
 -----------------------------------------------------*/
-Route::get('/', 'BookController@getIndex');
+Route::get('/', function () {
+    return view('index');
+});
 
 Route::get('/books', 'BookController@getIndex');
 
