@@ -1,6 +1,4 @@
 <?php
-
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -12,25 +10,49 @@
 |
 */
 
-// Reminder: 5 Route methods are: get, post, put, delete, or all
+# Reminder: 5 Route methods are: get, post, put, delete, or all
 
-Route::get('/', function () {
-    return view('index');
-});
+/*----------------------------------------------------
+/books
+-----------------------------------------------------*/
+Route::get('/', 'BookController@getIndex');
 
-# Explicit routes for Books
 Route::get('/books', 'BookController@getIndex');
+
 Route::get('/books/show/{title?}', 'BookController@getShow');
+
 Route::get('/books/create', 'BookController@getCreate');
 Route::post('/books/create', 'BookController@postCreate');
 
 # Alternative to the above, using implicit Controller routing
 //Route::controller('/books','BookController');
 
+
+
+
+/*----------------------------------------------------
+/practice
+-----------------------------------------------------*/
 Route::controller('/practice','PracticeController');
 
+
+
+
+/*----------------------------------------------------
+Debugging/Local/Misc
+-----------------------------------------------------*/
 if(App::environment('local')) {
+
     Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+
+    Route::get('/drop', function() {
+
+        DB::statement('DROP database foobooks');
+        DB::statement('CREATE database foobooks');
+
+        return 'Dropped foobooks; created foobooks.';
+    });
+
 };
 
 Route::get('/debug', function() {
