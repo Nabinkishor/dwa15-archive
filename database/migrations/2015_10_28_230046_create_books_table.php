@@ -24,7 +24,6 @@ class CreateBooksTable extends Migration
 
             # The rest of the fields...
             $table->string('title');
-            $table->string('author');
             $table->integer('page_count');
             $table->integer('published');
             $table->string('cover');
