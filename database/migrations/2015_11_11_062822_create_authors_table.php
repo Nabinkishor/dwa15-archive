@@ -33,6 +33,6 @@ class CreateAuthorsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('books');
+        Schema::drop('authors');
     }
 }
