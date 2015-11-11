@@ -44,3 +44,24 @@ nav ul li {
     padding:5px;
     margin-right:5px;
 }
+
+label {
+    margin-top:10px;
+    margin-bottom:0;
+    display:block;
+}
+
+input[type='text'] {
+    width:300px;
+}
+
+.flash_message {
+    width:100%;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:yellow;
+    font-weight:bold;
+}
