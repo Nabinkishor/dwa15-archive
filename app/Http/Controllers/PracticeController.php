@@ -7,22 +7,15 @@ use Illuminate\Http\Request;
 
 class PracticeController extends Controller {
 
-
+    /*----------------------------------------------------
+    Examples 6-8 were from Lecture 12
+    -----------------------------------------------------*/
     function getExample8() {
 
-        // $book = \App\Book::with('author')->first();
-        // dump($book);
-        // dump($book->author);
-		// return 'Example 8';
+        $book = \App\Book::with('author')->first();
 
-        # Eager load the author with the book
-        $books = \App\Book::with('author')->get();
+        echo $book->title.' was written by '.$book->author->first_name.' '.$book->author->last_name;
 
-        foreach($books as $book) {
-            echo $book->author->first_name.' '.$book->author->last_name.' wrote '.$book->title.'<br>';
-        }
-
-        dump($books->toArray());
 	}
 
     function getExample7() {
