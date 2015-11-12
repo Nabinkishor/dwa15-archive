@@ -23,6 +23,12 @@
 </head>
 <body>
 
+    @if(\Session::has('flash_message'))
+        <div class='flash_message'>
+            {{ \Session::get('flash_message') }}
+        </div>
+    @endif
+
     <header>
         <a href='/'>
         <img

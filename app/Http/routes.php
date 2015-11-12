@@ -26,6 +26,9 @@ Route::get('/books/show/{title?}', 'BookController@getShow');
 Route::get('/books/create', 'BookController@getCreate');
 Route::post('/books/create', 'BookController@postCreate');
 
+Route::get('/books/edit/{id?}', 'BookController@getEdit');
+Route::post('/books/edit', 'BookController@postEdit');
+
 # Alternative to the above, using implicit Controller routing
 //Route::controller('/books','BookController');
 

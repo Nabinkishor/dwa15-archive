@@ -16,7 +16,11 @@ class BookController extends Controller {
     */
     public function getIndex(Request $request) {
 
-        return view('books.index');
+        $books = \App\Book::orderBy('id','DESC')->get();
+
+        //dump($books->toArray());
+
+        return view('books.index')->with('books',$books);
     }
 
     /**
@@ -24,7 +28,14 @@ class BookController extends Controller {
     */
     public function getEdit($id = null) {
 
-        return view('books.edit');
+        $book = \App\Book::find($id);
+
+        if(is_null($book)) {
+            \Session::flash('flash_message','Book not found.');
+            return redirect('\books');
+        }
+
+        return view('books.edit')->with('book',$book);
 
     }
 
@@ -33,7 +44,21 @@ class BookController extends Controller {
     */
     public function postEdit(Request $request) {
 
-        return 'postEdit';
+        // Validation
+
+        $book = \App\Book::find($request->id);
+
+        $book->title = $request->title;
+        $book->author = $request->author;
+        $book->author_id = 1;
+        $book->cover = $request->cover;
+        $book->published = $request->published;
+        $book->purchase_link = $request->purchase_link;
+
+        $book->save();
+
+        \Session::flash('flash_message','Your book was updated.');
+        return redirect('/books/edit/'.$request->id);
 
     }
 
@@ -53,13 +78,30 @@ class BookController extends Controller {
             $request,
             [
                 'title' => 'required|min:5',
-            ]
+                'author' => 'required|min:5',
+                'cover' => 'required|url',
+                'published' => 'required|min:4',
+              ]
         );
-        
+
         // Code here to enter book into the database
+        $book = new \App\Book();
+        $book->title = $request->title;
+        $book->author = $request->author;
+        $book->author_id = 1;
+        $book->cover = $request->cover;
+        $book->published = $request->published;
+        $book->purchase_link = $request->purchase_link;
+
+        $book->save();
 
         // Confirm book was entered:
-        return 'Process adding new book: '.$request->input('title');
+        //return 'Process adding new book: '.$request->input('title');
+        //return view()
+
+        \Session::flash('flash_message','Your book was added!');
+
+        return redirect('/books');
 
     }
 

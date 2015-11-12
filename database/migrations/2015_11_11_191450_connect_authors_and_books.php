@@ -24,7 +24,7 @@ class ConnectAuthorsAndBooks extends Migration
 
             # ref: http://laravel.com/docs/5.1/migrations#dropping-indexes
             $table->dropForeign('books_author_id_foreign');
-            
+
             $table->dropColumn('author_id');
         });
     }

@@ -8,6 +8,65 @@ use Illuminate\Http\Request;
 class PracticeController extends Controller {
 
 
+    function getExample8() {
+
+        // $book = \App\Book::with('author')->first();
+        // dump($book);
+        // dump($book->author);
+		// return 'Example 8';
+
+        # Eager load the author with the book
+        $books = \App\Book::with('author')->get();
+
+        foreach($books as $book) {
+            echo $book->author->first_name.' '.$book->author->last_name.' wrote '.$book->title.'<br>';
+        }
+
+        dump($books->toArray());
+	}
+
+    function getExample7() {
+
+        $author = new \App\Author;
+        $author->first_name = 'J.K';
+        $author->last_name = 'Rowling';
+        $author->bio_url = 'https://en.wikipedia.org/wiki/J._K._Rowling';
+        $author->birth_year = '1965';
+        $author->save();
+        dump($author->toArray());
+
+        $book = new \App\Book;
+        $book->title = "Harry Potter and the Philosopher's Stone";
+        $book->published = 1997;
+        $book->cover = 'http://prodimage.images-bn.com/pimages/9781582348254_p0_v1_s118x184.jpg';
+        $book->purchase_link = 'http://www.barnesandnoble.com/w/harrius-potter-et-philosophi-lapis-j-k-rowling/1102662272?ean=9781582348254';
+        $book->author()->associate($author); # <--- Associate the author with this book
+        //$book->author_id = $author->id;
+
+        $book->save();
+        dump($book->toArray());
+
+		return 'Added new book.';
+
+	}
+
+    function getExample6() {
+
+        // Query Responsibility
+	    $books = \App\Book::orderBy('id','DESC')->get();
+
+        $first = $books->first();
+        $last  = $books->last();
+
+        //$first = \App\Book::orderBy('id','ASC')->first();
+        //$last = \App\Book::orderBy('id','DESC')->first();
+
+        dump($books);
+        dump($first);
+        dump($last);
+
+	}
+
     /*----------------------------------------------------
     Examples 1-5 were from Lecture 10
     -----------------------------------------------------*/
@@ -72,6 +131,20 @@ class PracticeController extends Controller {
         ]);
 
         return 'Example 1';
+
+    }
+
+    function getExample0() {
+
+        $books = \App\Book::orderBy('id','ASC')->get();
+        //$first = \App\Book::orderBy('id','ASC')->first();
+        //$last =  \App\Book::orderBy('id','DESC')->first();
+
+        $first = $books->first();
+        $last  = $books->last();
+
+        dump($first->toArray());
+        dump($last->toArray());
 
     }
 

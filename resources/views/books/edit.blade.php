@@ -21,13 +21,15 @@
 
         <input type='hidden' value='{{ csrf_token() }}' name='_token'>
 
+        <input type='hidden' name='id' value='{{ $book->id }}'>
+
         <fieldset>
             <label>* Title:</label>
             <input
                 type='text'
                 id='title'
                 name='title'
-                value=''
+                value='{{$book->title}}'
             >
         </fieldset>
 
@@ -37,7 +39,7 @@
                 type='text'
                 id='author'
                 name="author"
-                value=''
+                value='{{$book->author}}'
             >
         </fieldset>
 
@@ -47,7 +49,7 @@
                 type='text'
                 id='cover'
                 name="cover"
-                value=''
+                value='{{$book->cover}}'
                 >
         </fieldset>
 
@@ -57,7 +59,7 @@
                 type='text'
                 id='published'
                 name="published"
-                value=''
+                value='{{$book->published}}'
                 >
         </fieldset>
 
@@ -67,7 +69,7 @@
                 type='text'
                 id='purchase_link'
                 name='purchase_link'
-                value=''
+                value='{{$book->purchase_link}}'
                 >
         </fieldset>
 
