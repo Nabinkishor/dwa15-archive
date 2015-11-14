@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class PracticeController extends Controller {
 
     /*----------------------------------------------------
-    Examples 6-8 were from Lecture 12
+    Examples 6-8 were from Lecture 11
     -----------------------------------------------------*/
     function getExample8() {
 
