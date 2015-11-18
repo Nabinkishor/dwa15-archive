@@ -8,16 +8,72 @@ use Illuminate\Http\Request;
 class PracticeController extends Controller {
 
     /*----------------------------------------------------
-    Examples 6-8 were from Lecture 11
+    Lecture 12
     -----------------------------------------------------*/
-    function getExample8() {
+    /**
+	* Get all the books, eagerly loading the tags
+	*/
+    function getExample11() {
 
-        $book = \App\Book::with('author')->first();
+        $books = \App\Book::with('tags')->get();
 
-        echo $book->title.' was written by '.$book->author->first_name.' '.$book->author->last_name;
+        foreach($books as $book) {
+            echo '<br>'.$book->title.' is tagged with: ';
+            foreach($book->tags as $tag) {
+                echo $tag->name.' ';
+            }
+        }
 
 	}
 
+    /**
+	* Get a single book with its tag(s)
+	*/
+    function getExample10() {
+
+        $book = \App\Book::where('title','=','The Great Gatsby')->first();
+
+        echo $book->title.' is tagged with: ';
+        foreach($book->tags as $tag) {
+            echo $tag->name.' ';
+        }
+        
+	}
+
+    /*----------------------------------------------------
+    Examples 6-9 were from Lecture 11
+    -----------------------------------------------------*/
+    /**
+	* Get all the books with their authors
+	*/
+    function getExample9() {
+
+        # Eager load the author with the book
+        $books = \App\Book::with('author')->get();
+
+        foreach($books as $book) {
+            echo $book->author->first_name.' '.$book->author->last_name.' wrote '.$book->title.'<br>';
+        }
+
+        dump($books->toArray());
+	}
+
+    /**
+	* Get a single book with its author
+	*/
+    function getExample8() {
+
+        $book = \App\Book::first();
+        $author = $book->author;
+
+        echo $book->title.' was written by '.$author->first_name.' '.$author->last_name;
+        dump($book->toArray());
+
+	}
+
+    /**
+	* Associate a new author with a new book
+	*/
     function getExample7() {
 
         $author = new \App\Author;
@@ -43,6 +99,9 @@ class PracticeController extends Controller {
 
 	}
 
+    /**
+	* Querying on the Model vs. the Collection
+	*/
     function getExample6() {
 
         // Query Responsibility
@@ -63,6 +122,9 @@ class PracticeController extends Controller {
     /*----------------------------------------------------
     Examples 1-5 were from Lecture 10
     -----------------------------------------------------*/
+    /**
+	* Delete example
+	*/
     function getExample5() {
 
         $book = new \App\Book();
@@ -73,6 +135,9 @@ class PracticeController extends Controller {
 
     }
 
+    /**
+	* Update example
+	*/
     function getExample4() {
 
         $book = new \App\Book();
@@ -85,6 +150,9 @@ class PracticeController extends Controller {
         return 'Example 4';
     }
 
+    /**
+	* Query for all books using the Book model
+	*/
     function getExample3() {
 
         $books = new \App\Book();
@@ -98,6 +166,9 @@ class PracticeController extends Controller {
 
     }
 
+    /**
+	* Query for all books using the Query Builder
+	*/
     function getExample2() {
 
         // Equivalent to: SELECT * FROM books
@@ -110,7 +181,9 @@ class PracticeController extends Controller {
         return 'Example 2';
     }
 
-
+    /**
+	* Insert using the Query Builder
+	*/
     function getExample1() {
 
         \DB::table('books')->insert([
@@ -127,18 +200,4 @@ class PracticeController extends Controller {
 
     }
 
-    function getExample0() {
-
-        $books = \App\Book::orderBy('id','ASC')->get();
-        //$first = \App\Book::orderBy('id','ASC')->first();
-        //$last =  \App\Book::orderBy('id','DESC')->first();
-
-        $first = $books->first();
-        $last  = $books->last();
-
-        dump($first->toArray());
-        dump($last->toArray());
-
-    }
-
-}
+} # eoc
