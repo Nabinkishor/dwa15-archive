@@ -11,6 +11,23 @@ class PracticeController extends Controller {
     Lecture 12
     -----------------------------------------------------*/
     /**
+	* Demonstrating working with users
+	*/
+    function getExample12() {
+
+        # Get the current logged in user
+		$user = \Auth::user();
+        if($user) {
+            echo 'Hi logged in user '.$user->name.'<br>';
+        }
+
+        # Get a user from the database
+        $user = \App\User::where('name','like','Jamal')->first();
+        echo 'Hi '.$user->name.'<br>';
+
+	}
+
+    /**
 	* Get all the books, eagerly loading the tags
 	*/
     function getExample11() {
