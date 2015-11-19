@@ -28,13 +28,15 @@
         </div>
 
         <div class='form-group'>
-            <label for='title'>* Author:</label>
-            <input
-                type='text'
-                id='author'
-                name="author"
-                value='{{$book->author}}'
-            >
+            <label for='author'>* Author:</label>
+            <select name='author' id='author'>
+                @foreach($authors_for_dropdown as $author_id => $author_name)
+
+                    {{ $selected = ($author_id == $book->author->id) ? 'selected' : '' }}
+
+                    <option value='{{ $author_id }}' {{ $selected }}> {{ $author_name }} </option>
+                @endforeach
+            </select>
         </div>
 
         <div class='form-group'>

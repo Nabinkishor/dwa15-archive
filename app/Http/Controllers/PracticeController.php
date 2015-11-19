@@ -37,7 +37,7 @@ class PracticeController extends Controller {
         foreach($book->tags as $tag) {
             echo $tag->name.' ';
         }
-        
+
 	}
 
     /*----------------------------------------------------
@@ -48,7 +48,7 @@ class PracticeController extends Controller {
 	*/
     function getExample9() {
 
-        # Eager load the author with the book
+        # Eager load the authors with the books
         $books = \App\Book::with('author')->get();
 
         foreach($books as $book) {
