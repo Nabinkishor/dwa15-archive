@@ -4,8 +4,23 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Auth;
+use Session;
 
 class PracticeController extends Controller {
+
+    function getExample() {
+
+		dump(\Auth::check());
+        dump(auth()->check());
+        dump(Auth::check());
+
+        dump(\Session::all());
+        dump(session()->all());
+        dump(Session::all());
+
+	}
+
 
     /*----------------------------------------------------
     Lecture 12

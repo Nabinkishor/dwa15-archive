@@ -47,11 +47,8 @@ Route::get('/confirm-login-worked', function() {
 /*----------------------------------------------------
 /books
 -----------------------------------------------------*/
-Route::get('/', 'BookController@getIndex');
-Route::get('/books', 'BookController@getIndex');
 
-Route::get('/books/show/{title?}', 'BookController@getShow');
-
+Route::get('/', 'WelcomeController@getIndex');
 
 Route::group(['middleware' => 'auth'], function() {
 
@@ -60,6 +57,12 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::get('/books/edit/{id?}', 'BookController@getEdit');
     Route::post('/books/edit', 'BookController@postEdit');
+
+    Route::get('/books/confirm-delete/{id?}', 'BookController@getConfirmDelete');
+    Route::get('/books/delete/{id?}', 'BookController@getDoDelete');
+
+    Route::get('/books', 'BookController@getIndex');
+    Route::get('/books/show/{title?}', 'BookController@getShow');
 
 });
 

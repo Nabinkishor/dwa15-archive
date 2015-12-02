@@ -37,13 +37,12 @@ such as a page specific styesheets.
         </div>
 
         <div class='form-group'>
-            <label for='title'>* Author:</label>
-            <input
-                type='text'
-                id='author'
-                name="author"
-                value='{{ old('author','Dr. Seuss') }}'
-            >
+            <label for='author'>* Author:</label>
+            <select name='author' id='author'>
+                @foreach($authors_for_dropdown as $author_id => $author_name)
+                    <option value='{{ $author_id }}'> {{ $author_name }} </option>
+                @endforeach
+            </select>
         </div>
 
         <div class='form-group'>
@@ -74,6 +73,13 @@ such as a page specific styesheets.
                 name='purchase_link'
                 value='{{ old('purchase_link','http://www.barnesandnoble.com/w/green-eggs-and-ham-dr-seuss/1100170349?ean=9780394800165') }}'
                 >
+        </div>
+
+        <div class='form-group'>
+            <label for='tags'>Tags</label>
+            @foreach($tags_for_checkbox as $tag_id => $tag)
+                <input type='checkbox' name='tags[]' value='{{$tag_id}}'> {{ $tag['name'] }}<br>
+            @endforeach
         </div>
 
         <button type="submit" class="btn btn-primary">Add book</button>
