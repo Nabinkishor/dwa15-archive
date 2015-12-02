@@ -72,10 +72,7 @@
         <div class='form-group'>
             <label for='tags'>Tags</label>
             @foreach($tags_for_checkbox as $tag_id => $tag)
-                <?
-                $checked = '';
-                if(in_array($tag['name'],$tags_for_this_book)) $checked = 'CHECKED';
-                ?>
+                <?php $checked = (in_array($tag['name'],$tags_for_this_book)) ? 'CHECKED' : '' ?>
                 <input {{ $checked }} type='checkbox' name='tags[]' value='{{$tag_id}}'> {{ $tag['name'] }}<br>
             @endforeach
         </div>
