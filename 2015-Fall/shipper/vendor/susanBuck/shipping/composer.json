@@ -1,0 +1,29 @@
+{
+    "name": "susanBuck/shipping",
+    "description": "Shipping Rate API",
+    "license": "MIT",
+    "keywords": ["ship", "ups", "usps", "fedex"],
+    "authors": [
+        {
+            "name": "Susan Buck",
+            "email": "susanbuck@susanbuck.net"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*",
+        "squizlabs/php_codesniffer": "1.5.5"
+    },
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "susanBuck\\Shipping\\": "src"
+        }
+    }
+}
