@@ -1,5 +1,5 @@
 ## Lecture notes for Dynamic Web Applications
-## Spring 2016
+## Fall 2015
 
 Short URL: <http://notes.dwa15.com>
 
