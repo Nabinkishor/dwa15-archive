@@ -1,0 +1,17 @@
+{
+	"title": "CSCI E-15 Dynamic Web Applications with Susan Buck - Harvard Extension School",
+	"menu_title": "CSCI E-15 Dynamic Web Applications",
+	"tagline": "Dynamic Web Applications is the next step for students who have experience with HTML/CSS and are looking to take their web programming skills to the next level with server-side web development.",
+	"author" : "Susan Buck",
+	"docs_path": "docs",
+	"image": "img/app.png",
+	"theme": "navy",
+	"template":"default",
+	"toggle_code": false,
+	"file_editor": false,
+	"float": false,
+	"date_modified": false,
+	"links": {
+	}
+
+}
