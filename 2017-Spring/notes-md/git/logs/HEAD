@@ -1,0 +1,50 @@
+533407b8c008bc5e1e1c1365cda126976eda02c3 5318691d8844b981bbaf3cb622cf5b8a5d483fe6 Susan Buck <susan@susanbuck.net> 1488939477 -0500	commit: Details may differ on camp
+5318691d8844b981bbaf3cb622cf5b8a5d483fe6 78f61018283b584770ac75c8839d163340921784 Susan Buck <susan@susanbuck.net> 1489033048 -0500	commit: Practice work
+78f61018283b584770ac75c8839d163340921784 f0ec00fcf5dadd9477e953f1f99c38586a13606d Susan Buck <susan@susanbuck.net> 1489089605 -0500	commit: Environments & Composer packages
+f0ec00fcf5dadd9477e953f1f99c38586a13606d ba90cb4325e9026c3e3f25f2c055ea8493e75ba4 Susan Buck <susan@susanbuck.net> 1489098081 -0500	commit: Misc updates to packages
+ba90cb4325e9026c3e3f25f2c055ea8493e75ba4 b0a506084be476e15a39f2cbd8b68d0038d9a6de Susan Buck <susan@susanbuck.net> 1489098219 -0500	commit: Views & Blade
+b0a506084be476e15a39f2cbd8b68d0038d9a6de d7cc2f8f3668c1abc4de0ec0283bbae292b25508 Susan Buck <susan@susanbuck.net> 1489098886 -0500	commit: Misc updates to View notes
+d7cc2f8f3668c1abc4de0ec0283bbae292b25508 ddc4947fb9323408a1d90452ee5341b0a0c3ce5e Susan Buck <susan@susanbuck.net> 1490303009 -0400	pull --tags --force --progress origin master:refs/remotes/origin/master: Fast-forward
+ddc4947fb9323408a1d90452ee5341b0a0c3ce5e 2c3ba5ef3b5e87e8f41e7d262808b67997f6ac86 Susan Buck <susan@susanbuck.net> 1490303020 -0400	commit: Forms Part 1
+2c3ba5ef3b5e87e8f41e7d262808b67997f6ac86 9418543ac65d9c20cdb4fba0d3b7ee0d81f4d6de Susan Buck <susan@susanbuck.net> 1490303183 -0400	commit: Handle checkbox
+9418543ac65d9c20cdb4fba0d3b7ee0d81f4d6de f9c227097c661fb9f211f3a9b76bb0a905bf2ced Susan Buck <susan@susanbuck.net> 1490305640 -0400	commit: Rename
+f9c227097c661fb9f211f3a9b76bb0a905bf2ced b2dee1591574313b10765521454436dc86af0321 Susan Buck <susan@susanbuck.net> 1490306035 -0400	commit: Retain data in form inputs; file rename
+b2dee1591574313b10765521454436dc86af0321 6a0167b162e5a0d97f53da0ff5060fba4197db99 Susan Buck <susan@susanbuck.net> 1490308839 -0400	commit: Forms with POST
+6a0167b162e5a0d97f53da0ff5060fba4197db99 25583792847e7b0328bfb4cb08671a34f2705411 Susan Buck <susan@susanbuck.net> 1490310294 -0400	commit: Typo
+25583792847e7b0328bfb4cb08671a34f2705411 aea97545cef4ebc7f95dc8c3e1ae0922f4860fb0 Susan Buck <susan@susanbuck.net> 1490311624 -0400	commit: Typo in comments
+aea97545cef4ebc7f95dc8c3e1ae0922f4860fb0 eceb37edca567bbf65bb17828cea325b3a424c2a Susan Buck <susan@susanbuck.net> 1490312581 -0400	commit: Validation
+eceb37edca567bbf65bb17828cea325b3a424c2a 41daca726e88234accb017abae1013a9aee4fd9f Susan Buck <susan@susanbuck.net> 1490320012 -0400	commit: old() helper method
+41daca726e88234accb017abae1013a9aee4fd9f 29c097896d93fd060e6a07580c4bd15bffd685ad Susan Buck <susan@susanbuck.net> 1490914903 -0400	pull --tags --force --progress origin master:refs/remotes/origin/master: Fast-forward
+29c097896d93fd060e6a07580c4bd15bffd685ad 3592fb78d977cfa8d8213f769abdbd82694c1ca0 Susan Buck <susan@susanbuck.net> 1490914999 -0400	commit: Straightened out examples for Rych Random
+3592fb78d977cfa8d8213f769abdbd82694c1ca0 d88852fe89e09900b05736fcbbd83e019d562a3a Susan Buck <susan@susanbuck.net> 1490915048 -0400	commit: Still need the backslash
+d88852fe89e09900b05736fcbbd83e019d562a3a a03babc3553f6b41cce68266d9d1669d931f3f2b Susan Buck <susan@susanbuck.net> 1491468047 -0400	pull --tags --force --progress origin master:refs/remotes/origin/master: Fast-forward
+a03babc3553f6b41cce68266d9d1669d931f3f2b ba4bd4d4c11a448c5adf603cd9e78d6ac5334934 Susan Buck <susan@susanbuck.net> 1491468055 -0400	commit: Database notes for Lecture 10
+ba4bd4d4c11a448c5adf603cd9e78d6ac5334934 910ff4e2fd564df9acc7ec636ebebee40c5a74d8 Susan Buck <susan@susanbuck.net> 1491500594 -0400	commit: Redundant "very"
+910ff4e2fd564df9acc7ec636ebebee40c5a74d8 3702248c2ec093d44cd15b03658bb766e5abdfcb Susan Buck <susan@susanbuck.net> 1491509939 -0400	commit: Replace "more mysql data types link"
+3702248c2ec093d44cd15b03658bb766e5abdfcb c30a2b83afa6f8849e01fd88b07d68519e79b097 Susan Buck <susan@susanbuck.net> 1491862709 -0400	commit: Troubleshooting tip for `No such file or directory` when connecting to local db
+c30a2b83afa6f8849e01fd88b07d68519e79b097 17541b9c81e26efd7fe9e1ff54933dec8a460ee7 Susan Buck <susan@susanbuck.net> 1491862711 -0400	pull --tags --force --progress origin master:refs/remotes/origin/master: Merge made by the 'recursive' strategy.
+17541b9c81e26efd7fe9e1ff54933dec8a460ee7 8a77bd23875a47aa3ba5073772d9de2f9fdce384 Susan Buck <susan@susanbuck.net> 1492075239 -0400	pull --tags --force --progress origin master:refs/remotes/origin/master: Fast-forward
+8a77bd23875a47aa3ba5073772d9de2f9fdce384 cc08f1440660d48cdd684239b9a9487b282e0ace Susan Buck <susan@susanbuck.net> 1492075248 -0400	commit: Lecture 11 notes
+cc08f1440660d48cdd684239b9a9487b282e0ace e050aed09e8b34f22e19ac6eb119e47bbd5ee78f Susan Buck <susan@susanbuck.net> 1492075575 -0400	commit: Markdown syntax fix
+e050aed09e8b34f22e19ac6eb119e47bbd5ee78f c77f7b86a97d17e03644406facdd5222573ac50d Susan Buck <susan@susanbuck.net> 1492075601 -0400	commit: Markdown syntax fix
+c77f7b86a97d17e03644406facdd5222573ac50d 9e31e007c6e24141c1539af78798aa8b7d5020e9 Susan Buck <susan@susanbuck.net> 1492105389 -0400	commit: Move quick-and-dirty seeding to CRUD notes
+9e31e007c6e24141c1539af78798aa8b7d5020e9 0a0448a74ebd0d195194afb16c0fb417d6d81993 Susan Buck <susan@susanbuck.net> 1492115992 -0400	commit: Fix broken link
+0a0448a74ebd0d195194afb16c0fb417d6d81993 89d7d5432af82165005013895dd7c9b91f7a0b45 Susan Buck <susan@susanbuck.net> 1492156308 -0400	pull --tags --force --progress origin master:refs/remotes/origin/master: Fast-forward
+89d7d5432af82165005013895dd7c9b91f7a0b45 c7b75a0cfaa91527bf7076481ef3edd08d43a6d6 Susan Buck <susan@susanbuck.net> 1492661021 -0400	pull --tags --force --progress origin master:refs/remotes/origin/master: Fast-forward
+c7b75a0cfaa91527bf7076481ef3edd08d43a6d6 da68b2eac7f10386d0fb4f701c09df43b0a54be9 Susan Buck <susan@susanbuck.net> 1492671309 -0400	commit: Collections
+da68b2eac7f10386d0fb4f701c09df43b0a54be9 cea50e1eb003ebed8a0b199304a9576a3456c6cc Susan Buck <susan@susanbuck.net> 1492671917 -0400	commit: Lecture 12 foobooks progress
+cea50e1eb003ebed8a0b199304a9576a3456c6cc 141d7770ec7045f7233b489b54b47b005437e871 Susan Buck <susan@susanbuck.net> 1493191660 -0400	pull --tags --force --progress origin master:refs/remotes/origin/master: Fast-forward
+141d7770ec7045f7233b489b54b47b005437e871 9ed36a730f1643534797600efcc6d8f372afff39 Susan Buck <susan@susanbuck.net> 1493233552 -0400	commit: Lecture 13 related notes
+9ed36a730f1643534797600efcc6d8f372afff39 f5f781510727eb548a5ff582e27d566304999437 Susan Buck <susan@susanbuck.net> 1493233603 -0400	commit: Fix typo in file name
+f5f781510727eb548a5ff582e27d566304999437 370e77c444b768398b54b22078b6c29246f368a8 Susan Buck <susan@susanbuck.net> 1493311000 -0400	commit: Misc updates to One to Many
+370e77c444b768398b54b22078b6c29246f368a8 49ca3a67ddf682288be840bec29f30952804976d Susan Buck <susan@susanbuck.net> 1493312354 -0400	commit: Correct author query
+49ca3a67ddf682288be840bec29f30952804976d 8a3aafa05c82ac4170e44d43f2d97c3c7c36072d Susan Buck <susan@susanbuck.net> 1493312555 -0400	commit: Correct author query
+8a3aafa05c82ac4170e44d43f2d97c3c7c36072d aaa376befc847b170ae797cf2df862774e0d87d2 Susan Buck <susan@susanbuck.net> 1493314384 -0400	commit: Better create example
+aaa376befc847b170ae797cf2df862774e0d87d2 168c733ceaeb568073b64cc81c3616a2516317fa Susan Buck <susan@susanbuck.net> 1493320215 -0400	commit: Fix double $$
+168c733ceaeb568073b64cc81c3616a2516317fa ee67912fb8657ef487605d5d575c2452520133fa Susan Buck <susan@susanbuck.net> 1493326934 -0400	commit: Removed backslash
+ee67912fb8657ef487605d5d575c2452520133fa a8f0b5f67bc547ba9018e591203c8c1ec4ef108e Susan Buck <susan@susanbuck.net> 1493328041 -0400	commit: Fix case convention
+a8f0b5f67bc547ba9018e591203c8c1ec4ef108e 92dd797c02922e1ea3c3969705a1795ef407a704 Susan Buck <susan@susanbuck.net> 1493331553 -0400	commit: Added note about detaching tags before deleting a book
+92dd797c02922e1ea3c3969705a1795ef407a704 9c91f6462edda732aa706b54c47dc9e91e2b5026 Susan Buck <susan@susanbuck.net> 1493360359 -0400	commit: Users setup
+9c91f6462edda732aa706b54c47dc9e91e2b5026 a1ed39c995217d08f66e8e1a5668bcf7512010d4 Susan Buck <susan@susanbuck.net> 1493410892 -0400	commit: Users Usage & Foobooks
+a1ed39c995217d08f66e8e1a5668bcf7512010d4 0d970769229200ab1add0dbfc99c00365c5c30bb Susan Buck <susan@susanbuck.net> 1493410912 -0400	commit: Look for name in array, not id
+0d970769229200ab1add0dbfc99c00365c5c30bb 8170ca8405c0029fe1897df5cd52e433bdce813e Susan Buck <susan@susanbuck.net> 1496781146 -0400	pull --tags --force --progress origin master:refs/remotes/origin/master: Fast-forward
