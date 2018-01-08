@@ -1,0 +1,45 @@
+0000000000000000000000000000000000000000 8e226ef27f72b5d553d55bcf0215123595977880 Susan Buck <susan@susanbuck.net> 1474583377 -0400	commit (initial): First commit
+8e226ef27f72b5d553d55bcf0215123595977880 b82fe764324f91befcc4e26cc1c25c7fc4d82e4c Susan Buck <susan@susanbuck.net> 1474583525 -0400	commit: Emptied readme
+b82fe764324f91befcc4e26cc1c25c7fc4d82e4c 1938965591b671425d6e91c6c445394fec8fadf3 Susan Buck <susan@susanbuck.net> 1474583604 -0400	commit: Added title to readme
+1938965591b671425d6e91c6c445394fec8fadf3 cae3d0938874a2e40fd6b8b64da513d65f2b9732 Susan Buck <susan@susanbuck.net> 1475123911 -0400	commit: Few tweaks made at the end of lecture 4 to demonstrate how the route -> view was working.
+cae3d0938874a2e40fd6b8b64da513d65f2b9732 7d6743888d9cedc632ddb644458857e49007b22b Susan Buck <susan@susanbuck.net> 1475123927 -0400	commit: Update README to include app description and link to planning doc.
+7d6743888d9cedc632ddb644458857e49007b22b c2305897d9ec1b8850076d5222a795ffad94f744 Susan Buck <susan@susanbuck.net> 1475519884 -0400	commit: Cleaned up web routes; added Controllers that were mentioned in the notes.
+c2305897d9ec1b8850076d5222a795ffad94f744 01f796b8ffe68be5b7fb7675d74715caf7fce844 Susan Buck <susan@susanbuck.net> 1475780119 -0400	commit: Set up a practice controller and routes for use in lecture
+01f796b8ffe68be5b7fb7675d74715caf7fce844 521a9a322ef92d944ef6fee14a0c2069aaa34ca0 Susan Buck <susan@susanbuck.net> 1475783226 -0400	commit: Use title instead of id for now
+521a9a322ef92d944ef6fee14a0c2069aaa34ca0 62884985d6792ac939904fe0f5db0db2aeeddbcf Susan Buck <susan@susanbuck.net> 1475804155 -0400	commit: Ignore debugbar cache files
+62884985d6792ac939904fe0f5db0db2aeeddbcf c67cb47542a4ff60f15791091edac60e483d17f9 Susan Buck <susan@susanbuck.net> 1475804212 -0400	commit: Example to demonstrate how you could specify what env file is loaded
+c67cb47542a4ff60f15791091edac60e483d17f9 5cfc3ebf45a3ac38496ede3d72c5aad097c9a5fb Susan Buck <susan@susanbuck.net> 1475804228 -0400	commit: Misc. changes from Lecture 6
+5cfc3ebf45a3ac38496ede3d72c5aad097c9a5fb 2dd16bb250ed7e1c483c932e5ce079253ec9541f Susan Buck <susan@susanbuck.net> 1475864913 -0400	commit: Tinkering with setting the aliases to study the use of ::class
+2dd16bb250ed7e1c483c932e5ce079253ec9541f 4f16162206e080dc138c920e09fcca983e657125 Susan Buck <susan@susanbuck.net> 1476384914 -0400	commit: Misc work pre-lecture 7
+4f16162206e080dc138c920e09fcca983e657125 8933c52196b059be5753393850466b002e5bff40 Susan Buck <susan@susanbuck.net> 1476385416 -0400	commit: Misc work pre-lecture 7
+8933c52196b059be5753393850466b002e5bff40 151f3b0240caddff7e79efb458ef277e7326d38d Susan Buck <susan@susanbuck.net> 1476385635 -0400	commit: View for book creation
+151f3b0240caddff7e79efb458ef277e7326d38d 5575f1f20da6557302d24cf42d16a615d7373b37 Susan Buck <susan@susanbuck.net> 1476385680 -0400	commit: Add title
+5575f1f20da6557302d24cf42d16a615d7373b37 4a2ab7a7efea8a816aa4f7138bfb1860311af448 Susan Buck <susan@susanbuck.net> 1476385795 -0400	commit: Added todo
+4a2ab7a7efea8a816aa4f7138bfb1860311af448 8af0ade8607b68ccf65a17255b38e105ad2d34fc Susan Buck <susan@susanbuck.net> 1476388457 -0400	commit: Added comments explaining each book route
+8af0ade8607b68ccf65a17255b38e105ad2d34fc cba301f7fe7e961e6e0ba2875aeeeefaab9538c4 Susan Buck <susan@susanbuck.net> 1476402031 -0400	commit: Foobooks after lecture 7, no cleanup
+cba301f7fe7e961e6e0ba2875aeeeefaab9538c4 dee68d84fa5a39035c9cc2cf8c1fb28fc5fc78a3 Susan Buck <susan@susanbuck.net> 1476422773 -0400	commit: Added some comments to the BookController
+dee68d84fa5a39035c9cc2cf8c1fb28fc5fc78a3 798fb1aaabdddf7e526cf4f5faf74a53821b5dbe Susan Buck <susan@susanbuck.net> 1476424047 -0400	commit: Show alternative helper for redirects
+798fb1aaabdddf7e526cf4f5faf74a53821b5dbe 2fad9dc1a3d28729c0ba0c026b084d4126f4ee8c Susan Buck <susan@susanbuck.net> 1476425642 -0400	commit: Better example using your own Class
+2fad9dc1a3d28729c0ba0c026b084d4126f4ee8c 603ad52849fc2b140cfe3ca7f090453d5d51271e Susan Buck <susan@susanbuck.net> 1477358290 -0400	commit: Examples from supplemental video
+603ad52849fc2b140cfe3ca7f090453d5d51271e 7da5a57c34473656436d97b2f90236fd9da24dba Susan Buck <susan@susanbuck.net> 1477591838 -0400	commit: Code edits from Lecture 9
+7da5a57c34473656436d97b2f90236fd9da24dba 1912bd29b06618b5f8c588783be2d6e4f71f03c2 Susan Buck <susan@susanbuck.net> 1477591846 -0400	commit: Testing a student used package
+1912bd29b06618b5f8c588783be2d6e4f71f03c2 a5787850fc7beb193c874e20dff6871d3a4615fc Susan Buck <susan@susanbuck.net> 1477598759 -0400	commit: ref: https://piazza.com/class/iqiwxxw3sex3r2?cid=143
+a5787850fc7beb193c874e20dff6871d3a4615fc c0e4067bb81caacabc87339788666c5eb6325d1d Susan Buck <susan@susanbuck.net> 1478173270 -0400	commit: Cleaned up routes, added some notes, added /drop route
+c0e4067bb81caacabc87339788666c5eb6325d1d 23ebc030cb4e9a03099e82df56ddc106d1937d1f Susan Buck <susan@susanbuck.net> 1478210866 -0400	commit: Adding first seeder
+23ebc030cb4e9a03099e82df56ddc106d1937d1f 7017e87aefeb996ecb1e45a221b7248d92db8eea Susan Buck <susan@susanbuck.net> 1478235516 -0400	commit: Post-lecture 10 commit
+7017e87aefeb996ecb1e45a221b7248d92db8eea fb75a3455c7727a71122ba15c4d39aeb686c5c6f Susan Buck <susan@susanbuck.net> 1478810128 -0500	commit: Line break after each example
+fb75a3455c7727a71122ba15c4d39aeb686c5c6f 2f8549c1ca375236a1a7cc70620ce692b8ad992f Susan Buck <susan@susanbuck.net> 1478811263 -0500	commit: Add error styling
+2f8549c1ca375236a1a7cc70620ce692b8ad992f 00f9a1e9acadf6dad54a47acd41579bafab20f1a Susan Buck <susan@susanbuck.net> 1478841411 -0500	commit: Lecture 11 progress
+00f9a1e9acadf6dad54a47acd41579bafab20f1a 950a1f03193377f049d33a8970aa831bd95b35dd Susan Buck <susan@susanbuck.net> 1478842816 -0500	commit: Book css
+950a1f03193377f049d33a8970aa831bd95b35dd ccc7d3029ba97bd9fb05778af707d1c8af6912d0 Susan Buck <susan@susanbuck.net> 1478842831 -0500	commit: Filled in more detail on book index
+ccc7d3029ba97bd9fb05778af707d1c8af6912d0 6769e613e3371f6430807da7c16d08e206b7d235 Susan Buck <susan@susanbuck.net> 1478842844 -0500	commit: Include book title on edit page
+6769e613e3371f6430807da7c16d08e206b7d235 6769e613e3371f6430807da7c16d08e206b7d235 Susan Buck <susan@susanbuck.net> 1478843444 -0500	checkout: moving from master to flash-message-views
+6769e613e3371f6430807da7c16d08e206b7d235 8009e94bc4ae9ef4c2f5fd3e0becf6bc6e2636d9 Susan Buck <susan@susanbuck.net> 1478843468 -0500	commit: Exam of view based flash messages
+8009e94bc4ae9ef4c2f5fd3e0becf6bc6e2636d9 6769e613e3371f6430807da7c16d08e206b7d235 Susan Buck <susan@susanbuck.net> 1478843539 -0500	checkout: moving from flash-message-views to master
+6769e613e3371f6430807da7c16d08e206b7d235 053328745d2ce0215458b451430c79da813e1575 Susan Buck <susan@susanbuck.net> 1479354235 -0500	commit: Use book index as homepage
+053328745d2ce0215458b451430c79da813e1575 b5bf251a652134e7998eac55c39abdd0191ef31a Susan Buck <susan@susanbuck.net> 1479413518 -0500	commit: Clean-up
+b5bf251a652134e7998eac55c39abdd0191ef31a bd70356b817adca02d1d3921781a4fa9fac03f2d Susan Buck <susan@susanbuck.net> 1479436344 -0500	commit: Progress from Lecture 12
+bd70356b817adca02d1d3921781a4fa9fac03f2d 22817db29c61d2b79df97a9677d42d47d15db757 Susan Buck <susan@susanbuck.net> 1479436737 -0500	commit: Clean up HTML on edit page
+22817db29c61d2b79df97a9677d42d47d15db757 51ec7f6b3fde196e6380f42f2d3c1a5684894e9d Susan Buck <susan@susanbuck.net> 1479439100 -0500	commit: Misc. clean up, examples and features. See post in Piazza for more details.
+51ec7f6b3fde196e6380f42f2d3c1a5684894e9d bb109e6a5cacf54920ce5f7e179c3d181cdcfe3b Susan Buck <susan@susanbuck.net> 1480701341 -0500	commit: Code from Lecture 13
+bb109e6a5cacf54920ce5f7e179c3d181cdcfe3b e02da10de2db81811a6e07a9d333c7cc5f3d6352 Susan Buck <susan@susanbuck.net> 1481171664 -0500	commit: Example for Devon
