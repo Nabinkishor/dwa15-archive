@@ -1,0 +1,70 @@
+0000000000000000000000000000000000000000 f7dfa1f52fe2b775ff317f4fbe4769e12691457c Susan Buck <susan@susanbuck.net> 1506546752 -0400	commit (initial): First commit
+f7dfa1f52fe2b775ff317f4fbe4769e12691457c 7ddce90ffd9e0229f2ba93b33f370162c21e3783 Susan Buck <susan@susanbuck.net> 1507133394 -0400	commit: Updated readme
+7ddce90ffd9e0229f2ba93b33f370162c21e3783 ae5cbb3ef50af5c6665fb8627540b4bb21522cf4 Susan Buck <susan@susanbuck.net> 1507153646 -0400	commit: Foobooks progress post Week 6 lecture videos
+ae5cbb3ef50af5c6665fb8627540b4bb21522cf4 c68ba760d25bb995646695316f528cf920fda636 Susan Buck <susan@susanbuck.net> 1507153791 -0400	commit: Added comments to the WelcomeController
+c68ba760d25bb995646695316f528cf920fda636 1fafbd641d2135750c3bc5e805299c0a214d8fe2 Susan Buck <susan@susanbuck.net> 1507510223 -0400	commit: Test
+1fafbd641d2135750c3bc5e805299c0a214d8fe2 ae193d723a24ab2fd88a26a2f13e3458232a8fac Susan Buck <susan@susanbuck.net> 1507578712 -0400	commit: Testing deploy script
+ae193d723a24ab2fd88a26a2f13e3458232a8fac c872a8f65ce65df4a5e998230018073b025411a2 Susan Buck <susan@susanbuck.net> 1507578847 -0400	commit: Use POSIX-syntax
+c872a8f65ce65df4a5e998230018073b025411a2 6bc0a314525c7d46e9fab470366cd06c9103b487 Susan Buck <susan@susanbuck.net> 1507578914 -0400	commit: Fix POSIX-syntax
+6bc0a314525c7d46e9fab470366cd06c9103b487 abc243db5e4126e5499b698aaca848f79abb97cf Susan Buck <susan@susanbuck.net> 1507580364 -0400	commit: Misc. cleanup
+abc243db5e4126e5499b698aaca848f79abb97cf 0dcbb7f5b697977cb2dc01bc5f08074b6caa50eb Susan Buck <susan@susanbuck.net> 1507581421 -0400	commit: Remove runCommandOnServer
+0dcbb7f5b697977cb2dc01bc5f08074b6caa50eb 7ee7f573a66f87d709c16bf22806f86df5a50665 Susan Buck <susan@susanbuck.net> 1507581924 -0400	commit: Example to show deployment script
+7ee7f573a66f87d709c16bf22806f86df5a50665 c71787492cc731203ebb63746eae36de854fa1a3 Susan Buck <susan@susanbuck.net> 1507588658 -0400	commit: Sync with notes
+c71787492cc731203ebb63746eae36de854fa1a3 5fced9ea4aa9f2806f14f0b8905e937da2914e60 Susan Buck <susan@susanbuck.net> 1507588694 -0400	commit: Added back server ip address
+5fced9ea4aa9f2806f14f0b8905e937da2914e60 8d74226afd9c8e7804a70f87e4140fb298ffe248 Susan Buck <susan@susanbuck.net> 1507660864 -0400	commit: testing autocrlf settings
+8d74226afd9c8e7804a70f87e4140fb298ffe248 87d17f30a83dbe64884702e724aaec09638ea4b1 Susan Buck <susan@susanbuck.net> 1507663157 -0400	commit: Revert BookController.php to pre-test state
+87d17f30a83dbe64884702e724aaec09638ea4b1 636faa32547f48c906b529a4a97f82c1deeaf94e Susan Buck <susan@susanbuck.net> 1507665395 -0400	commit: Practice controller to be shown in Week 7
+636faa32547f48c906b529a4a97f82c1deeaf94e cb9680ba9c878202ef974ba5bfba308e37b8518d Susan Buck <susan@susanbuck.net> 1507742624 -0400	commit: Testing different environment configs
+cb9680ba9c878202ef974ba5bfba308e37b8518d 525755eca7a359bcd0e66d16c079a3d1390e12a3 Susan Buck <susan@susanbuck.net> 1507750958 -0400	commit: Installed 2 packages; set up some examples in the PracticeController
+525755eca7a359bcd0e66d16c079a3d1390e12a3 b5b38aa98cdf7603853b6eae98b36317a36d3340 Susan Buck <susan@susanbuck.net> 1507765602 -0400	commit: Week 7 lecture code
+b5b38aa98cdf7603853b6eae98b36317a36d3340 4977bd11120b8f912cc1e318e5d890c192e99b51 Susan Buck <susan@susanbuck.net> 1507847226 -0400	commit: Sync'd deploy function
+4977bd11120b8f912cc1e318e5d890c192e99b51 167bd4de16aa1c05fdf2110b77ee6ba508d53592 Susan Buck <susan@susanbuck.net> 1508180840 -0400	commit: Removed unused method
+167bd4de16aa1c05fdf2110b77ee6ba508d53592 eaad03e3205be4c4f57fbacc813c4b17ebd16fae Susan Buck <susan@susanbuck.net> 1508184442 -0400	commit: Misc. cleanup
+eaad03e3205be4c4f57fbacc813c4b17ebd16fae b1df70769217012d40ba0d806d9d414e024fe516 Susan Buck <susan@susanbuck.net> 1508194597 -0400	commit: Misc foobooks updates in preparation for Week 8
+b1df70769217012d40ba0d806d9d414e024fe516 8fb07bb4f3c30716b2186113c4514d48b16e7456 Susan Buck <susan@susanbuck.net> 1508268505 -0400	commit: Pre-Week 8 style/content changes
+8fb07bb4f3c30716b2186113c4514d48b16e7456 56ecbb92cbd48dfbfa7799cada71929eeec540b0 Susan Buck <susan@susanbuck.net> 1508370409 -0400	commit: Week 8 lecture code
+56ecbb92cbd48dfbfa7799cada71929eeec540b0 7fb0cb62e542b8a54eb533878a3ed5a2e6d958b4 Susan Buck <susan@susanbuck.net> 1508439001 -0400	commit: Finish trivia feature; modularize errors; clean up styling.
+7fb0cb62e542b8a54eb533878a3ed5a2e6d958b4 71903af059c7157222ae6488ac0eb25330d7cd69 Susan Buck <susan@susanbuck.net> 1508778164 -0400	commit: Custom validation example
+71903af059c7157222ae6488ac0eb25330d7cd69 d09fa3ef75b02c4d6899f64ea35fb4035237358a Susan Buck <susan@susanbuck.net> 1508778638 -0400	commit: Fix redirect
+d09fa3ef75b02c4d6899f64ea35fb4035237358a e2b784bfce0e6b2389be8b59fea04b40c95481c7 Susan Buck <susan@susanbuck.net> 1508778805 -0400	commit: method and action were inverted
+e2b784bfce0e6b2389be8b59fea04b40c95481c7 d4a34f22f97e29874eefe7c75b32dc0c5d14f13f Susan Buck <susan@susanbuck.net> 1508779907 -0400	commit: Typo in error field module
+d4a34f22f97e29874eefe7c75b32dc0c5d14f13f 5e55dc7814a9d83dd8b7f0c69d337e8203397fc6 Susan Buck <susan@susanbuck.net> 1508947803 -0400	commit: Laravel version update; example of a custom validation class.
+5e55dc7814a9d83dd8b7f0c69d337e8203397fc6 5e55dc7814a9d83dd8b7f0c69d337e8203397fc6 Susan Buck <susan@susanbuck.net> 1509568975 -0400	reset: moving to origin/master
+5e55dc7814a9d83dd8b7f0c69d337e8203397fc6 b8c5ae220de34cd650b84c837962a5095f7cfb95 Susan Buck <susan@susanbuck.net> 1510023379 -0500	reset: moving to origin/master
+b8c5ae220de34cd650b84c837962a5095f7cfb95 172b08cbc3d0a0f331f35e2d0202f6e0181ce9de Susan Buck <susan@susanbuck.net> 1510023415 -0500	commit: Comment out authors field as it's now handled by its own table
+172b08cbc3d0a0f331f35e2d0202f6e0181ce9de 247762202467991aa90730a9652a101f783a6e46 Susan Buck <susan@susanbuck.net> 1510023477 -0500	commit: Mistake in class name; should be CreateAuthorsTable
+247762202467991aa90730a9652a101f783a6e46 1bc692d58eccb1489d0d5fa05e20c065c975c99a Susan Buck <susan@susanbuck.net> 1510023569 -0500	commit: Fixed authors table migration.
+1bc692d58eccb1489d0d5fa05e20c065c975c99a 19748491e11d71d79b376689fad0a489f86fd200 Susan Buck <susan@susanbuck.net> 1510178275 -0500	commit: Code from Week 11
+19748491e11d71d79b376689fad0a489f86fd200 7f877d8c3a63036db83985945e6cc1ffee791b95 Susan Buck <susan@susanbuck.net> 1510178845 -0500	commit: Added debug route so I can test production database connection
+7f877d8c3a63036db83985945e6cc1ffee791b95 31004120d7868c1fcd964e81a2c4f7eb8645414b Susan Buck <susan@susanbuck.net> 1510599180 -0500	commit: Added Practice to nav; added 2 example queries in response to #143
+31004120d7868c1fcd964e81a2c4f7eb8645414b 589944d6ff190e6eba8e3aeb9e1cc3559ff2f4a8 Susan Buck <susan@susanbuck.net> 1510789014 -0500	commit: Code from Week 12
+589944d6ff190e6eba8e3aeb9e1cc3559ff2f4a8 c0ba2141676e7b7de0026c899e61117f51f1d4ee Susan Buck <susan@susanbuck.net> 1511210282 -0500	commit: Misc: Example showing how to make active nav links appear active
+c0ba2141676e7b7de0026c899e61117f51f1d4ee 2cd386d630cf6dad84c96720a5a18d53633117c9 Susan Buck <susan@susanbuck.net> 1511822612 -0500	commit: Debug route
+2cd386d630cf6dad84c96720a5a18d53633117c9 435f410b53dd5fe90c6e4b7913198d1c1d4688ab Susan Buck <susan@susanbuck.net> 1511974758 -0500	commit: Delete related code
+435f410b53dd5fe90c6e4b7913198d1c1d4688ab db1b9fd55065bb907652bc9827e01021e7f4f020 Susan Buck <susan@susanbuck.net> 1512003445 -0500	commit: Foobooks progress from Week 13
+db1b9fd55065bb907652bc9827e01021e7f4f020 fe2128571105b4d9fcf02789703812047b3a7942 Susan Buck <susan@susanbuck.net> 1512014078 -0500	commit: Foobooks progress from Week 13
+fe2128571105b4d9fcf02789703812047b3a7942 6da7ad11784e0733cf9cda2f7f70bbf0d13e3076 Susan Buck <susan@susanbuck.net> 1512055561 -0500	commit: Authentication
+6da7ad11784e0733cf9cda2f7f70bbf0d13e3076 82981a1013e29ef50f7b1789e3e6450ecb452b00 Susan Buck <susan@susanbuck.net> 1512055660 -0500	commit: Update deploy script so fresh migration and seeds are run with every deployment. Not something you'd do on a "real world" app, but useful in our academic/development setting.
+82981a1013e29ef50f7b1789e3e6450ecb452b00 45bd53751a58aa7d953d1ab3d6b61ad8aa20bf4a Susan Buck <susan@susanbuck.net> 1512055737 -0500	commit: Have to use --force in order to run migrations on production w/o confirmation
+45bd53751a58aa7d953d1ab3d6b61ad8aa20bf4a 0fdc96f236f7e09ff990eae5db18d82d6d1cd0ed Susan Buck <susan@susanbuck.net> 1512412640 -0500	commit: Default option for author dropdown should be in display, not logic.
+0fdc96f236f7e09ff990eae5db18d82d6d1cd0ed 2e5e52bf519e9a110fa1f697a451aceb44fc9d3c Susan Buck <susan@susanbuck.net> 1512581746 -0500	commit: Example for https://github.com/susanBuck/dwa15-fall2017/issues/193
+2e5e52bf519e9a110fa1f697a451aceb44fc9d3c 0bd4ee4c2a0ae565cd07d3c2e8b172531252a3e5 Susan Buck <susan@susanbuck.net> 1512581815 -0500	commit: Add assetVersion to config
+0bd4ee4c2a0ae565cd07d3c2e8b172531252a3e5 0bd4ee4c2a0ae565cd07d3c2e8b172531252a3e5 Susan Buck <susan@susanbuck.net> 1512607891 -0500	checkout: moving from master to StreamlineControllerAndTestingDemo
+0bd4ee4c2a0ae565cd07d3c2e8b172531252a3e5 67088cd4ec434d67c2b49ea2827c493b4ef65032 Susan Buck <susan@susanbuck.net> 1512607925 -0500	commit: https://github.com/susanBuck/dwa15-fall2017/issues/198
+67088cd4ec434d67c2b49ea2827c493b4ef65032 0bd4ee4c2a0ae565cd07d3c2e8b172531252a3e5 Susan Buck <susan@susanbuck.net> 1512607945 -0500	checkout: moving from StreamlineControllerAndTestingDemo to master
+0bd4ee4c2a0ae565cd07d3c2e8b172531252a3e5 56c0b137618ec8e002543fefe56f40fb1c55ae33 Susan Buck <susan@susanbuck.net> 1512664068 -0500	commit: https://github.com/susanBuck/dwa15-fall2017/issues/182
+56c0b137618ec8e002543fefe56f40fb1c55ae33 088a144bed0d31c254267c1f71f186f9f47527b5 Susan Buck <susan@susanbuck.net> 1512664207 -0500	revert: Revert "https://github.com/susanBuck/dwa15-fall2017/issues/182"
+088a144bed0d31c254267c1f71f186f9f47527b5 d2b71b8c8749d2f76135fdac9eade85a3e065429 Susan Buck <susan@susanbuck.net> 1512665715 -0500	commit: https://github.com/susanBuck/dwa15-fall2017/issues/200
+d2b71b8c8749d2f76135fdac9eade85a3e065429 326bb35ade5785866e87c0c21eb5c14ca0631fb3 Susan Buck <susan@susanbuck.net> 1512760828 -0500	commit: Update Book dump to work with authors table
+326bb35ade5785866e87c0c21eb5c14ca0631fb3 0a1e9ca969bf2bca1c209d560d3ba179327788a7 Susan Buck <susan@susanbuck.net> 1512760842 -0500	commit: https://github.com/susanBuck/dwa15-fall2017/issues/202
+0a1e9ca969bf2bca1c209d560d3ba179327788a7 fc5ae7e1a15f8b4e3d52e4e056f8f8f445ea0703 Susan Buck <susan@susanbuck.net> 1512762250 -0500	commit: style guide fix
+fc5ae7e1a15f8b4e3d52e4e056f8f8f445ea0703 28e50fb4d3cd7fa6c99caf3ffcf07f7e6a316092 Susan Buck <susan@susanbuck.net> 1512762268 -0500	commit: Example of how to make data available to all views (specifically, user data)
+28e50fb4d3cd7fa6c99caf3ffcf07f7e6a316092 c33c9e8da28ad4e7b98a3b0ad94c8f670e4cf054 Susan Buck <susan@susanbuck.net> 1513020741 -0500	commit: https://github.com/susanBuck/dwa15-fall2017/issues/208
+c33c9e8da28ad4e7b98a3b0ad94c8f670e4cf054 b4ef7c4f6f7704f28132e8c277161e76b30ef7b3 Susan Buck <susan@susanbuck.net> 1513022724 -0500	commit: Docs section
+b4ef7c4f6f7704f28132e8c277161e76b30ef7b3 1932f5028340c46a62bf33e39f7542aecd7da561 Susan Buck <susan@susanbuck.net> 1513022734 -0500	commit: Checkbox labels should be clickable too
+1932f5028340c46a62bf33e39f7542aecd7da561 894cae87330ce7c4b08c969981ff129d113e27c0 Susan Buck <susan@susanbuck.net> 1513024807 -0500	commit: https://github.com/susanBuck/dwa15-fall2017/issues/221
+894cae87330ce7c4b08c969981ff129d113e27c0 036d7267059955a32cf7013287daa3fc97d4f7df Susan Buck <susan@susanbuck.net> 1513036714 -0500	commit: Latest
+036d7267059955a32cf7013287daa3fc97d4f7df c5a7639fec39b888ae5924fce91d09be02cdb794 Susan Buck <susan@susanbuck.net> 1513036801 -0500	commit: Example for Chen
+c5a7639fec39b888ae5924fce91d09be02cdb794 e7a071aae6110406788a21f044ab2c299b4dc975 Susan Buck <susan@susanbuck.net> 1513100587 -0500	commit: It's more efficient to make the view data available to `layouts.master` vs `*` (https://github.com/susanBuck/dwa15-fall2017/issues/220)
+e7a071aae6110406788a21f044ab2c299b4dc975 65d40979ff7de63e710c33d392bad80facde67e3 Susan Buck <susan@susanbuck.net> 1513100598 -0500	commit: Don't need this view.
+65d40979ff7de63e710c33d392bad80facde67e3 e53e8e5362ac6ce6b52ecd21162f232fb2d82758 Susan Buck <susan@susanbuck.net> 1513201499 -0500	commit: https://github.com/susanBuck/dwa15-fall2017/issues/232#issuecomment-351512055

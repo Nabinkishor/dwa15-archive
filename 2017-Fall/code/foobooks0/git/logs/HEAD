@@ -1,0 +1,15 @@
+0000000000000000000000000000000000000000 850ce48413f1cb531a273a4cc53f8043d284548c Susan Buck <susan@susanbuck.net> 1505326359 -0400	clone: from git@github.com:susanBuck/foobooks0.git
+850ce48413f1cb531a273a4cc53f8043d284548c 388a3fdd5cae8af043668f3239a0c6bed219dbcf Susan Buck <susan@susanbuck.net> 1505332727 -0400	commit: Display all books. Added some basic CSS styling.
+388a3fdd5cae8af043668f3239a0c6bed219dbcf 9ecffd002b3c5645aac0371047b68c1eb20239f1 Susan Buck <susan@susanbuck.net> 1505345139 -0400	commit: Changes post Part 3
+9ecffd002b3c5645aac0371047b68c1eb20239f1 1faecb1514246d7ae17d3e737bc63aba70b3d210 Susan Buck <susan@susanbuck.net> 1505350339 -0400	commit: Done with POST example, revert back to GET
+1faecb1514246d7ae17d3e737bc63aba70b3d210 afd0b65293f0cd3ed640aeb889b0ff74167e8f53 Susan Buck <susan@susanbuck.net> 1505357599 -0400	commit: Added case sensitive checkbox (from part 4 of todays lecture). Cleaned up and commented logic code. Organized form HTML.
+afd0b65293f0cd3ed640aeb889b0ff74167e8f53 497de305ff842f1fba662569eb7c8a6b774d2942 Susan Buck <susan@susanbuck.net> 1505841105 -0400	commit: Example to demonstrate moving files and tracking w/ git
+497de305ff842f1fba662569eb7c8a6b774d2942 cc03c3bb928996e6c3eca9b6a2d8ac1001ca3b9c Susan Buck <susan@susanbuck.net> 1505841493 -0400	commit: Moved foobooks.js into js/ directory
+cc03c3bb928996e6c3eca9b6a2d8ac1001ca3b9c 52b1e006e6a76f331167bb92b4a1033837670a82 Susan Buck <susan@susanbuck.net> 1505842039 -0400	commit: Another git moving example
+52b1e006e6a76f331167bb92b4a1033837670a82 8624a3583d94371dc198760b080ab6cd7fde7160 Susan Buck <susan@susanbuck.net> 1505842110 -0400	commit: example 3
+8624a3583d94371dc198760b080ab6cd7fde7160 450654f9b0d7e715413877570a2f52db3fc008a0 Susan Buck <susan@susanbuck.net> 1505842414 -0400	commit: Example 3
+450654f9b0d7e715413877570a2f52db3fc008a0 92fd26ea511fed046b4ed822ab5d61924e327039 Susan Buck <susan@susanbuck.net> 1505939168 -0400	commit: Incorporated Book class into foobooks0 (Week 4 lecture videos)
+92fd26ea511fed046b4ed822ab5d61924e327039 adf382475bead24b40b4a8adcb5f6d99b978d55a Susan Buck <susan@susanbuck.net> 1505951467 -0400	commit: Post Week4 lecture videos refactoring to organize and accommodate validation
+adf382475bead24b40b4a8adcb5f6d99b978d55a c7fd3df88c0004c2d434df3c4551fd5806aa694d Susan Buck <susan@susanbuck.net> 1505952328 -0400	commit: Added link in README
+c7fd3df88c0004c2d434df3c4551fd5806aa694d fe0cce12917ef08c41339f58425950c7de67217f Susan Buck <susan@susanbuck.net> 1506546874 -0400	commit: https://github.com/susanBuck/dwa15-fall2017/issues/51
+fe0cce12917ef08c41339f58425950c7de67217f 34c315b1353b389bb47b67106324577c443b54ea Susan Buck <susan@susanbuck.net> 1507773247 -0400	commit: Normalize quotes
