@@ -1,13 +1,3 @@
-@extends('templates.master')
-
-@section('title')
-    Prerequisites
-@endsection
-
-@section('content')
-
-@markdown
-
 # Prerequisites
 <div style='background-color:yellow; padding:5px; display:inline-block'>
 Before registering for CSCI E-15, take the self-administered <a href='http://prereq.dwa15.com'>CSCI E-15 Prerequisite Quiz</a>.
@@ -72,6 +62,3 @@ For HTML/CSS skills, Harvard Ext's __CSCI E-12 Fundamentals of Website Developme
 Your experience can also come from non-HES courses, self-taught study, on the job experience, etc.
 
 The [prerequisite quiz](http://prereq.dwa15.com) includes HTML/CSS questions to help your judge your preparedness for this course.
-
-@endmarkdown
-@endsection

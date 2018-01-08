@@ -1,25 +1,4 @@
-@extends('templates.master')
 
-@section('title')
-    Schedule
-@endsection
-
-@section('/body')
-    <link href='/css/schedule.css' rel='stylesheet'>
-@endsection
-
-@section('content')
-
-<h1>Schedule</h1>
-
-<?php date_default_timezone_set('America/New_York'); ?>
-<div id='notes'>
-    <p>All times/deadlines for this course are in the Eastern timezone.
-    <p>The current time (as of page load) is <strong><?php echo date('D M jS g:ia'); ?></strong>.
-    <p><i class="fa fa-lock" aria-hidden="true"></i> The weekly links below require you to authorize you are a student in this class. Upon clicking, you will be prompted to authorize via your Github account.</p>
-</div>
-
-@markdown
 ### [Week 1 - Aug 30](/week/1)
 * What this course covers
 * Course logistics
@@ -76,7 +55,3 @@
 
 ### Exam week
 * Your final progress log (Week 14) is due before Wed Dec 13 @ 11:59pm Eastern. Late submissions are <strong>not</strong> accepted for this final progress log.
-
-@endmarkdown
-
-@endsection

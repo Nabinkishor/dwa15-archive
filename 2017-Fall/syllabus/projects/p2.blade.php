@@ -1,14 +1,3 @@
-@extends('templates.master')
-
-@section('title')
-    Project 2: PHP Fundamentals
-@endsection
-
-@section('content')
-
-<script>var jumpTo = true;</script>
-
-@markdown
 
 # Project 2: PHP Fundamentals
 
@@ -77,9 +66,3 @@ Be sure to read <a href='https://dwa15.com/policies#Original work and academic i
 
 #### Misc
 - Follow any/all other best practices not explicitly mentioned above but discussed in lecture/notes.
-
-
-
-@endmarkdown
-
-@endsection

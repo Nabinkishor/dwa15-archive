@@ -1,14 +1,4 @@
-@extends('templates.master')
 
-@section('title')
-    Issues
-@stop
-
-@section('content')
-
-<script>var jumpTo = true;</script>
-
-@markdown
 
 # Issues
 
@@ -61,7 +51,3 @@ The following is a quick summary of guidelines to help you build good posts.
 
 ### Read more
 [Writing the Perfect Question](http://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
-
-@endmarkdown
-
-@endsection

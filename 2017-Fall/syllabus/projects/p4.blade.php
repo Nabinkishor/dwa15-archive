@@ -1,15 +1,3 @@
-@extends('templates.master')
-
-@section('title')
-    Project 4: Open-ended application (with database)
-@endsection
-
-@section('content')
-
-<script>var jumpTo = true;</script>
-
-@markdown
-
 # Project 4: Open-ended application (with database)
 
 The final project in this course brings together the skills we've learned throughout the semester to create a fully functioning web application that uses Laravel and interacts with a database.

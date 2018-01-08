@@ -1,14 +1,4 @@
-@extends('templates.master')
 
-@section('title')
-    Grading
-@stop
-
-@section('content')
-
-<script>var jumpTo = true;</script>
-
-@markdown
 
 # Grading
 The grading scheme for this course is additive&mdash; you earn points by completing thorough, thoughtful, and on-time work that demonstrates your progression in the course and a strong understanding of the curriculum.
@@ -64,7 +54,3 @@ This course's grading schema is designed according to the [Harvard Extension Sch
 <img src='https://s3.amazonaws.com/dwa15.com/letter-grade-scale%402x.png' style='max-width:900px;' alt=''>
 
 Grades will not be rounded at the end of the semester ([full explanation](/grade-rounding)).
-
-
-@endmarkdown
-@endsection

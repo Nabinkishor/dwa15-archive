@@ -1,12 +1,3 @@
-@extends('templates.master')
-
-@section('title')
-    Chat
-@stop
-
-@section('content')
-
-@markdown
 
 # Chat
 
@@ -24,5 +15,3 @@ It is not required that you use the course chat; it is only provided for those s
 + There's a portion of the weekly progress logs that can *not* be discussed in the Chat; this portion will be clearly marked on the log template.
 + Do not chat about course logistics (due dates, grades, policies, etc.) - these questions should be emailed directly to the instructor ({{ config('mail.instructor') }})
 
-@endmarkdown
-@endsection

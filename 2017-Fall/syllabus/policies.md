@@ -1,15 +1,3 @@
-@extends('templates.master')
-
-@section('title')
-    Course Policies
-@endsection
-
-@section('content')
-
-<script>var jumpTo = true;</script>
-
-@markdown
-
 # Course Policies
 
 ## &ldquo;Attendance&rdquo;
@@ -71,7 +59,3 @@ While __project repositories are public__, your __weekly progress logs are priva
 
 ## Harvard Extension School Disability Services
 > *&ldquo;The Extension School is committed to providing an accessible academic community. The Disability Services Office offers a variety of accommodations and services to students with documented disabilities. [Please visit this web site for more information...](www.extension.harvard.edu/resources-policies/resources/disability-services-accessibility).&rdquo;*
-
-@endmarkdown
-
-@endsection

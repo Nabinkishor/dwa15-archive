@@ -1,15 +1,3 @@
-@extends('templates.master')
-
-@section('title')
-    Project 3: Framework fundamentals
-@endsection
-
-@section('content')
-
-<script>var jumpTo = true;</script>
-
-@markdown
-
 # Project 3: Framework fundamentals
 
 For this project you will create a simple web application using the Laravel framework.
@@ -72,13 +60,5 @@ Be sure to read <a href='https://dwa15.com/policies#Original work and academic i
 + Code should be consistent and organized, following all the specifications outlined in the notes on [Code style](https://github.com/susanBuck/dwa15-fall2017/blob/master/02_PHP/99_Code_style.md).
 + Any CSS or JS should be external. Embedded CSS/JS is acceptable only in the case of one page sites. Inline CSS/JS is not acceptable.
 
-
-
 #### Misc
 - Follow any/all other best practices not explicitly mentioned above but discussed in lecture/notes.
-
-
-
-@endmarkdown
-
-@endsection

@@ -1,15 +1,3 @@
-@extends('templates.master')
-
-@section('title')
-    Project 1
-@endsection
-
-@section('content')
-
-<script>var jumpTo = true;</script>
-
-@markdown
-
 # Project 1
 
 For this small, proof of concept project, you will create a single page website that displays the following information:
@@ -68,9 +56,3 @@ __Example__: <a href='http://p1.dwa15.me' target='_blank'>http://p1.dwa15.me</a>
 
 #### Misc
 - Follow any/all other best practices not explicitly mentioned above but discussed in lecture/notes.
-
-
-
-@endmarkdown
-
-@endsection

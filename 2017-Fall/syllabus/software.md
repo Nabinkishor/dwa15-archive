@@ -1,22 +1,4 @@
-@extends('templates.master')
 
-@section('/head')
-    <style>
-    img.service {
-        width:100px;
-    }
-    </style>
-@endsection
-
-@section('title')
-    Software & Services
-@endsection
-
-@section('content')
-
-<script>var jumpTo = true;</script>
-
-@markdown
 
 # Software & Services
 
@@ -83,6 +65,3 @@ It would be to your advantage to stick with our suggestions as that's what the l
 
 Instructions for different platforms can vary greatly, and it is impossible to support all options, especially in a large course. By sticking with set recommendations, we can provide more cohesive instruction and most efficiently help everyone.
 
-
-@endmarkdown
-@endsection

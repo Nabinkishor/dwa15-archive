@@ -1,10 +1,4 @@
-@extends('templates.master')
 
-@section('content')
-
-<script>var jumpTo = true;</script>
-
-@markdown
 # Readings
 
 ## Primary Reading
@@ -44,6 +38,3 @@ __Laravel__
 ## Other resources
 + [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web) for front-end reference
 + [Lynda.com access for Harvard students](http://lynda.harvard.edu)
-
-@endmarkdown
-@endsection
