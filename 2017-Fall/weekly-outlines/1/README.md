@@ -1,1 +1,0 @@
-Made a mistake this semester by going too much into https://github.com/susanBuck/dwa15-spring2017-notes/blob/master/01_Servers_and_Git/00_Intro.md in Week 1. Only need to quickly explain why we need local servers and how to set up.

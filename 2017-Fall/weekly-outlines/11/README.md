@@ -1,5 +1,0 @@
-Part 1: Housekeeping (20:39)
-Part 2: CRUD (14:37)
-Part 3: Eloquent (48:35)
-Part 4: Seeders (8:57)
-Part 5: Production Database Setup (12:59)
